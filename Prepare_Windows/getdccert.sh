@@ -1,0 +1,1 @@
+openssl.exe s_client nexus.corp.local:636
