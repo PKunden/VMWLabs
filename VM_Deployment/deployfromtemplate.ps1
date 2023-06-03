@@ -1,14 +1,14 @@
 
-$vmname = "ber-vidm-l-03a"
-$ip = "192.168.75.52"
-$vmlocation = "BA2-VMs"
-$datastorename = "vsandatastore"
+$vmname = "xint-wsa03a"
+$ip = "192.168.73.13"
+$vmlocation = "AZ1-VMs"
+$datastorename = "vsanDatastore"
 $specname = "ubuntu"
 $subnetmask = "255.255.255.0"
-$gateway = "192.168.75.254"
-$vmhostname = "esx-155b.rainpole.dev"
-$templatename = "template-ubuntu"
-$vsanpolicyName = "Policy-PFTT1-SFTT1"
+$gateway = "192.168.73.254"
+$vmhostname = "esx-01a.corp.internal"
+$templatename = "lu22-t"
+$vsanpolicyName = "Policy-SFTT1"
 
 
 
@@ -21,6 +21,7 @@ New-VM -Name $vmname -Template $template -Datastore $datastore -VMHost (get-vmho
 write-host "Waiting for 10 seconds"
 Start-Sleep -Seconds 10
 Get-VM $vmname | Get-NetworkAdapter | Set-NetworkAdapter -StartConnected $true -Confirm:$false -OutVariable $null
+get-vm $vmname | Set-VM -MemoryGB 4 -Confirm:$false
 start-vm $vmname -Confirm:$false -RunAsync -OutVariable $null
 
 do {
