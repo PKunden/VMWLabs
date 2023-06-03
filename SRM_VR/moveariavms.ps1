@@ -1,9 +1,15 @@
-# move Aria Automation vms
-$vraFolderName = "xint-m01-fd-vra"
-
 # Please pay attention to naming pattern
+
+# move vRLCM VM
+$vrlcmVM = "xint-vrslcm01"
+$vrslcmFolderName = "xint-m01-fd-vrslcm"
+$location = Get-Inventory -Name $vrslcmFolderName
+Move-VM -VM (get-vm $vrlcmVM) -Destination $location
+
+# move Aria Automation vms
 $vravm = "xint-vra0*a"
-$location=Get-Inventory -Name $vraFolderName
+$vraFolderName = "xint-m01-fd-vra"
+$location = Get-Inventory -Name $vraFolderName
 Move-VM -VM (get-vm $vravm) -Destination $location
 
 # move Aria operations vms
