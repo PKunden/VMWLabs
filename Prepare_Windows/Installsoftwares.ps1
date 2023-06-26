@@ -6,3 +6,5 @@ choco install googlechrome -y
 choco install mobaxterm -y
 choco install 7zip -y
 choco install git -y
+choco install keepass -y
+choco install keepass-keepasshttp -y
