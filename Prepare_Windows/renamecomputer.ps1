@@ -1,5 +1,5 @@
 
 $username = "administrator"
-$compname = "ws191006"
+$compname = "ws192606"
 rename-computer -newname $compname -localcredential $username -restart
 
