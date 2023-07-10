@@ -1,13 +1,11 @@
+# to start powervalidate solution you need a token. This script helps you achieve it
+# just run this once and from the same powershell session run the other commands
 ###### fixed for all scripts #############
-$domainname = ".corp.local"
+$domainname = "corp.local"
 $sddcmHostName = "sfo-vcf01"
-$sddcDomainName = "sfo-m01"
 $sddcManagerUser = "administrator@vsphere.local"
 $sddcManagerPass = "PSGlobalCloud123!"
-$domainFqdn = "vsphere.local"
-$vCenterName = "sfo-m01-vc01.corp.local"
-$sddcManagerFqdn = "$sddcmHostName$domainname" # concatenate string
+$sddcManagerFqdn = $sddcmHostName + "." + $domainname # concatenate string
 
-
-
+############################### do not modify anything after this ###########################
 Request-VCFToken -fqdn $sddcManagerFqdn -username $sddcManagerUser -password $sddcManagerPass
