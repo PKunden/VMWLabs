@@ -13,6 +13,7 @@ $vrliAdminGroup = "gg-vrli-admins"
 $vrliUserGroup = "gg-vrli-users"
 $vrliViewerGroup = "gg-vrli-viewers"
 
+# idea here is to create description and who is managing the group. But not important.
 
 Get-ADGroup -Identity $vrliAdminGroup | Set-ADGroup -Description "vRCLI Admins" -ManagedBy (Get-ADUser -Identity ron)
 # Get-ADGroup -Identity  | Set-ADGroup -Description "vROPS Admins" -ManagedBy (Get-ADUser -Identity Neville)
