@@ -1,0 +1,10 @@
+{
+    "country": "DE",
+    "email": "admin@vmware.com",
+    "ip": "ber-srm-l-01a.rainpole.dev,192.168.40.25",
+    "locality": "Stuttgart",
+    "organization": "VMware",
+    "organization_unit": "VMware organization unit",
+    "state": "Baden Wuerttemberg",
+    "fqdn" : "ber-srm-l-01a.rainpole.dev"
+}
