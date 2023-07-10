@@ -1,0 +1,96 @@
+// this is just a response to understand various tasks involved
+// also this renamed as jsonc to allow commenting.
+
+{
+    "id": "93702100-0e52-479c-ae4d-c85d491e0a45",
+    "name": "Deploying overlay AVNs for default cluster of management domain",
+    "type": "AVN",
+    "status": "Successful",
+    "creationTimestamp": "2023-06-25T13:19:09.168Z",
+    "completionTimestamp": "2023-06-25T13:19:30.278Z",
+    "subTasks": [
+        {
+            "name": "Acquire lock for AVNs creation",
+            "description": "Acquire lock for AVNs creation",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-06-25T13:19:09.568Z",
+            "completionTimestamp": "2023-06-25T13:19:09.656Z",
+            "errors": []
+        },
+        {
+            "name": "Validate the AVN input spec",
+            "description": "Validate the AVN input spec",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-06-25T13:19:09.763Z",
+            "completionTimestamp": "2023-06-25T13:19:10.040Z",
+            "errors": []
+        },
+        {
+            "name": "Prepare data required for AVNs creation",
+            "description": "Prepare data required for AVNs creation",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-06-25T13:19:10.074Z",
+            "completionTimestamp": "2023-06-25T13:19:11.024Z",
+            "errors": []
+        },
+        {
+            "name": "Validate NSX-T Edge Cluster status",
+            "description": "Validate NSX-T Edge Cluster status",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-06-25T13:19:11.054Z",
+            "completionTimestamp": "2023-06-25T13:19:12.038Z",
+            "errors": []
+        },
+        {
+            "name": "Prepare data required for Overlay AVNs creation",
+            "description": "Prepare data required for Overlay AVNs creation",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-06-25T13:19:12.079Z",
+            "completionTimestamp": "2023-06-25T13:19:12.417Z",
+            "errors": []
+        },
+        {
+            "name": "Fetch NSX-T Data Center Overlay Transport Zone",
+            "description": "Fetch NSX-T Data Center Overlay Transport Zone",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-06-25T13:19:12.482Z",
+            "completionTimestamp": "2023-06-25T13:19:12.927Z",
+            "errors": []
+        },
+        {
+            "name": "Create Overlay AVN Segment in NSX-T",
+            "description": "Create Overlay AVN Segment in NSX-T",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-06-25T13:19:12.988Z",
+            "completionTimestamp": "2023-06-25T13:19:25.662Z",
+            "errors": []
+        },
+        {
+            "name": "Validate Application Virtual Network (AVN) Connectivity",
+            "description": "Validate Application Virtual Network (AVN) Connectivity",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-06-25T13:19:25.720Z",
+            "completionTimestamp": "2023-06-25T13:19:29.840Z",
+            "errors": []
+        },
+        {
+            "name": "Create AVN inventory",
+            "description": "Create AVN inventory",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-06-25T13:19:29.899Z",
+            "completionTimestamp": "2023-06-25T13:19:30.080Z",
+            "errors": []
+        },
+        {
+            "name": "Release lock",
+            "description": "Release lock",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-06-25T13:19:30.127Z",
+            "completionTimestamp": "2023-06-25T13:19:30.231Z",
+            "errors": []
+        }
+    ],
+    "errors": [],
+    "resolutionStatus": "UNRESOLVED",
+    "isCancellable": false
+}
