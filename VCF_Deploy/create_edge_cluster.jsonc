@@ -27,7 +27,7 @@
             "edgeTep1IP": "172.16.17.10/24",
             "edgeTep2IP": "172.16.17.11/24",
             "edgeTepVlan": 1617,
-            "clusterId": "df826b7c-626b-42d0-be7b-9ad31ce467fe",
+            "clusterId": "", // vSphere Cluster where you want to deploy NSX Edge Cluster
             "interRackCluster": false,
             "uplinkNetwork": [
                 {
@@ -37,7 +37,7 @@
                         {
                             "ip": "172.16.15.253/24",
                             "asn": 65001,
-                            "password": "VMware1!"
+                            "password": "VMware1!" // Check with the network admin
                         }
                     ]
                 },
@@ -48,7 +48,7 @@
                         {
                             "ip": "172.16.16.253/24",
                             "asn": 65001,
-                            "password": "VMware1!"
+                            "password": "VMware1!" // Check with the network admin
                         }
                     ]
                 }
@@ -62,7 +62,7 @@
             "edgeTep1IP": "172.16.17.12/24", // TEP IP1 [IP:02]
             "edgeTep2IP": "172.16.17.13/24", // TEP IP2 [IP:03]
             "edgeTepVlan": 1617,
-            "clusterId": "df826b7c-626b-42d0-be7b-9ad31ce467fe",
+            "clusterId": "", // vSphere Cluster where you want to deploy NSX Edge Cluster
             "interRackCluster": false,
             "uplinkNetwork": [
                 {
@@ -72,7 +72,7 @@
                         {
                             "ip": "172.16.15.253/24",
                             "asn": 65001,
-                            "password": "VMware1!"
+                            "password": "VMware1!" // Check with the network admin
                         }
                     ]
                 },
@@ -83,7 +83,7 @@
                         {
                             "ip": "172.16.16.253/24",
                             "asn": 65001,
-                            "password": "VMware1!"
+                            "password": "VMware1!" // Check with the network admin
                         }
                     ]
                 }
