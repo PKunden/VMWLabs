@@ -10,13 +10,11 @@ $vmhostname = "esx-01a.corp.internal"
 $templatename = "lu22-t"
 $vsanpolicyName = "Policy-SFTT1"
 
-
-
 $template = get-template -Name $templatename
 $specs = Get-OSCustomizationSpec -Name $specname
 $datastore = get-datastore -Name $datastorename
 $vsansp = Get-SpbmStoragePolicy -Name $vsanpolicyName
-Get-OSCustomizationSpec $specs | Get-OSCustomizationNicMapping | Set-OSCustomizationNicMapping –IpMode UseStaticIP –IpAddress $ip –SubnetMask $subnetmask –DefaultGateway $gateway
+Get-OSCustomizationSpec $specs | Get-OSCustomizationNicMapping | Set-OSCustomizationNicMapping -IpMode UseStaticIP -IpAddress $ip -SubnetMask $subnetmask -DefaultGateway $gateway
 New-VM -Name $vmname -Template $template -Datastore $datastore -VMHost (get-vmhost $vmhostname) -OSCustomizationSpec $specs -Location (Get-Folder -Name $vmlocation) -StoragePolicy $vsansp
 write-host "Waiting for 10 seconds"
 Start-Sleep -Seconds 10
