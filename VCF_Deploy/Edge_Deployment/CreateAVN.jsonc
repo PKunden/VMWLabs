@@ -1,0 +1,25 @@
+// use this file to create a AVN network required for the Aria Suite.
+// this file is saved as jsonc
+{
+    "edgeClusterId": "", //this must be changed and i have made this null because API gives strange error
+    "avns": [
+        {
+            "name": "local-seg-md-vcf0-ko",
+            "regionType": "REGION_A", //only for standalone WSOne and Aria Loginsight, do not change this
+            "subnet": "10.210.16.0",
+            "subnetMask": "255.255.255.0",
+            "gateway": "10.210.16.254",
+            "mtu": 1600, // this should be 9000 MTU
+            "routerName": "sfo-m01-ec01-T1" // T1
+        },
+        {
+            "name": "regional-seg-md-vcf0-ko",
+            "regionType": "X_REGION", //Aria suite is installed in this VLAN, do not change this
+            "subnet": "10.210.17.0",
+            "subnetMask": "255.255.255.0",
+            "gateway": "10.210.17.254",
+            "mtu": 1600, // this should be 9000 MTU
+            "routerName": "sfo-m01-ec01-T1" // T1
+        }
+    ]
+}

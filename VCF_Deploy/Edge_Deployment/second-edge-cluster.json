@@ -1,0 +1,94 @@
+{
+    "edgeClusterName": "ec2-wld1-vcf0-ko",
+    "edgeClusterProfileSpec": {
+        "bfdAllowedHop": 255,
+        "bfdDeclareDeadMultiple": 3,
+        "bfdProbeInterval": 1000,
+        "edgeClusterProfileName": "ec2-wld1-vcf0-ko",
+        "standbyRelocationThreshold": 30
+    },
+    "edgeClusterType": "NSX-T",
+    "edgeRootPassword": "VMware123!VMware123!",
+    "edgeAdminPassword": "VMware123!VMware123!",
+    "edgeAuditPassword": "VMware123!VMware123!",
+    "edgeFormFactor": "LARGE",
+    "tier0ServicesHighAvailability": "ACTIVE_ACTIVE",
+    "mtu": 1700,
+    "asn": 65004,
+    "edgeNodeSpecs": [
+        {
+            "edgeNodeName": "en1-ec2-wld1-vcf0-ko.rainpole.dev",
+            "managementIP": "172.16.11.71/24",
+            "managementGateway": "172.16.11.253",
+            "edgeTepGateway": "172.16.17.253",
+            "edgeTep1IP": "172.16.17.14/24",
+            "edgeTep2IP": "172.16.17.15/24",
+            "edgeTepVlan": 1617,
+            "clusterId": "f7488a0d-7613-4cb2-8eea-9422dccca3f5",
+            "interRackCluster": false,
+            "uplinkNetwork": [
+                {
+                    "uplinkVlan": 1625,
+                    "uplinkInterfaceIP": "172.16.25.10/24",
+                    "bgpPeers": [
+                        {
+                            "ip": "172.16.25.253/24",
+                            "asn": 65001,
+                            "password": "VMware1!"
+                        }
+                    ]
+                },
+                {
+                    "uplinkVlan": 1626,
+                    "uplinkInterfaceIP": "172.16.26.10/24",
+                    "bgpPeers": [
+                        {
+                            "ip": "172.16.26.253/24",
+                            "asn": 65001,
+                            "password": "VMware1!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "edgeNodeName": "en2-ec2-wld1-vcf0-ko.rainpole.dev",
+            "managementIP": "172.16.11.72/24",
+            "managementGateway": "172.16.11.253",
+            "edgeTepGateway": "172.16.17.253",
+            "edgeTep1IP": "172.16.17.16/24",
+            "edgeTep2IP": "172.16.17.17/24",
+            "edgeTepVlan": 1617,
+            "clusterId": "f7488a0d-7613-4cb2-8eea-9422dccca3f5",
+            "interRackCluster": false,
+            "uplinkNetwork": [
+                {
+                    "uplinkVlan": 1625,
+                    "uplinkInterfaceIP": "172.16.25.11/24",
+                    "bgpPeers": [
+                        {
+                            "ip": "172.16.25.253/24",
+                            "asn": 65001,
+                            "password": "VMware1!"
+                        }
+                    ]
+                },
+                {
+                    "uplinkVlan": 1626,
+                    "uplinkInterfaceIP": "172.16.26.11/24",
+                    "bgpPeers": [
+                        {
+                            "ip": "172.16.26.253/24",
+                            "asn": 65001,
+                            "password": "VMware1!"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "tier0RoutingType": "EBGP",
+    "tier0Name": "gw1-t0-ec2-wld1-vcf0-ko",
+    "tier1Name": "gw1-t1-ec2-wld1-vcf0-ko",
+    "edgeClusterProfileType": "CUSTOM"
+}

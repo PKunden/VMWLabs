@@ -1,0 +1,910 @@
+{
+    "elements": [
+        {
+            "id": "146ae76d-d033-4107-8eb2-acad95e2a5d7",
+            "name": "Adding edge cluster ec2-wld1-vcf0-ko",
+            "type": "NSXT_EDGECLUSTER_CREATION",
+            "status": "Successful",
+            "creationTimestamp": "2023-08-12T15:16:33.099Z",
+            "completionTimestamp": "2023-08-12T16:23:22.794Z",
+            "subTasks": [
+                {
+                    "name": "Acquire Lock on SDDC Manager",
+                    "description": "Acquire Lock on SDDC Manager",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:16:33.454Z",
+                    "completionTimestamp": "2023-08-12T15:16:33.558Z",
+                    "errors": []
+                },
+                {
+                    "name": "Automation Helper Action",
+                    "description": "Automation Helper Action",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:16:33.625Z",
+                    "completionTimestamp": "2023-08-12T15:16:34.018Z",
+                    "errors": []
+                },
+                {
+                    "name": "Fetch and Validate VMware Cloud Foundation vCenter Cluster IDs",
+                    "description": "Fetch and Validate VMware Cloud Foundation vCenter Cluster IDs",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:16:34.080Z",
+                    "completionTimestamp": "2023-08-12T15:16:34.348Z",
+                    "errors": []
+                },
+                {
+                    "name": "Fetch Credentials from Inventory",
+                    "description": "Fetch Credentials from Inventory",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:16:34.372Z",
+                    "completionTimestamp": "2023-08-12T15:16:35.294Z",
+                    "errors": []
+                },
+                {
+                    "name": "Obtain SDDC Manager Inventory Data",
+                    "description": "Obtain SDDC Manager Inventory Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:16:35.380Z",
+                    "completionTimestamp": "2023-08-12T15:16:38.334Z",
+                    "errors": []
+                },
+                {
+                    "name": "Fetch NSX-T Data Center Overlay Transport Zone",
+                    "description": "Fetch NSX-T Data Center Overlay Transport Zone",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:16:38.362Z",
+                    "completionTimestamp": "2023-08-12T15:16:38.723Z",
+                    "errors": []
+                },
+                {
+                    "name": "Fetch NSX enabled VDS uplinks used for overlay",
+                    "description": "Fetch NSX enabled VDS uplinks used for overlay",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:16:38.754Z",
+                    "completionTimestamp": "2023-08-12T15:16:39.169Z",
+                    "errors": []
+                },
+                {
+                    "name": "Ensure Edge Node NSX VDS Uplink Values are Present",
+                    "description": "Ensure Edge Node NSX VDS Uplink Values are Present",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:16:39.201Z",
+                    "completionTimestamp": "2023-08-12T15:16:39.488Z",
+                    "errors": []
+                },
+                {
+                    "name": "Pre-Validation of NSX-T Data Center Edge Cluster Deployment",
+                    "description": "Pre-Validation of NSX-T Data Center Edge Cluster Deployment",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:16:39.519Z",
+                    "completionTimestamp": "2023-08-12T15:18:30.689Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate Edge Cluster Input Data",
+                    "description": "Generate Edge Cluster Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:30.728Z",
+                    "completionTimestamp": "2023-08-12T15:18:31.247Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update SDDC Manager Inventory with NSX-T Data Center Edge Cluster",
+                    "description": "Update SDDC Manager Inventory with NSX-T Data Center Edge Cluster",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:31.286Z",
+                    "completionTimestamp": "2023-08-12T15:18:31.446Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create Resource Pool(s)",
+                    "description": "Create Resource Pool(s)",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:31.506Z",
+                    "completionTimestamp": "2023-08-12T15:18:32.603Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate Host Switch Profile Input Data",
+                    "description": "Generate Host Switch Profile Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:32.675Z",
+                    "completionTimestamp": "2023-08-12T15:18:32.954Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Host Switch Uplink Profiles",
+                    "description": "Create NSX-T Data Center Host Switch Uplink Profiles",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:33.021Z",
+                    "completionTimestamp": "2023-08-12T15:18:33.949Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Transport Zone Teaming Policy",
+                    "description": "Create NSX-T Data Center Transport Zone Teaming Policy",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:34.021Z",
+                    "completionTimestamp": "2023-08-12T15:18:35.014Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate VLAN Port Group Input Data",
+                    "description": "Generate VLAN Port Group Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:35.081Z",
+                    "completionTimestamp": "2023-08-12T15:18:35.383Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create Trunked Port VLAN Port Group",
+                    "description": "Create Trunked Port VLAN Port Group",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:35.430Z",
+                    "completionTimestamp": "2023-08-12T15:18:41.493Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update SDDC Manager Inventory with VLAN Port Groups",
+                    "description": "Update SDDC Manager Inventory with VLAN Port Groups",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:41.546Z",
+                    "completionTimestamp": "2023-08-12T15:18:41.642Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate NSX-T Data Center Edge Cluster Input Data",
+                    "description": "Generate NSX-T Data Center Edge Cluster Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:41.691Z",
+                    "completionTimestamp": "2023-08-12T15:18:42.073Z",
+                    "errors": []
+                },
+                {
+                    "name": "Deploy and Configure Multiple NSX-T Data Center Edge Nodes",
+                    "description": "Deploy and Configure Multiple NSX-T Data Center Edge Nodes",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:42.134Z",
+                    "completionTimestamp": "2023-08-12T15:55:28.775Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update SDDC Manager Inventory with NSX-T Data Center Edge Node IDs",
+                    "description": "Update SDDC Manager Inventory with NSX-T Data Center Edge Node IDs",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:28.847Z",
+                    "completionTimestamp": "2023-08-12T15:55:28.965Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create Anti-Affinity Rule for NSX-T Data Center Edge Nodes",
+                    "description": "Create Anti-Affinity Rule for NSX-T Data Center Edge Nodes",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:29.031Z",
+                    "completionTimestamp": "2023-08-12T15:55:32.177Z",
+                    "errors": []
+                },
+                {
+                    "name": "Override VM HA Isolation Response For Clusters",
+                    "description": "Override VM HA Isolation Response For Clusters",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:32.264Z",
+                    "completionTimestamp": "2023-08-12T15:55:43.065Z",
+                    "errors": []
+                },
+                {
+                    "name": "Override HA VM Restart Priority For Clusters",
+                    "description": "Override HA VM Restart Priority For Clusters",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:43.130Z",
+                    "completionTimestamp": "2023-08-12T15:55:53.872Z",
+                    "errors": []
+                },
+                {
+                    "name": "Automation Helper Action",
+                    "description": "Automation Helper Action",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:53.927Z",
+                    "completionTimestamp": "2023-08-12T15:55:54.247Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate NSX-T Data Center Edge Profile Input Data",
+                    "description": "Generate NSX-T Data Center Edge Profile Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:54.295Z",
+                    "completionTimestamp": "2023-08-12T15:55:54.575Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Edge High Availability Profile",
+                    "description": "Create NSX-T Data Center Edge High Availability Profile",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:54.601Z",
+                    "completionTimestamp": "2023-08-12T15:55:55.561Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Edge Cluster",
+                    "description": "Create NSX-T Data Center Edge Cluster",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:55.623Z",
+                    "completionTimestamp": "2023-08-12T15:55:56.998Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update SDDC Manager Inventory with NSX-T Data Center Edge Cluster Source ID",
+                    "description": "Update SDDC Manager Inventory with NSX-T Data Center Edge Cluster Source ID",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:57.060Z",
+                    "completionTimestamp": "2023-08-12T15:55:57.212Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Edge Cluster Credentials",
+                    "description": "Create NSX-T Data Center Edge Cluster Credentials",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:57.270Z",
+                    "completionTimestamp": "2023-08-12T15:55:59.439Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Edge Cluster Uplink Segments",
+                    "description": "Create NSX-T Data Center Edge Cluster Uplink Segments",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:59.483Z",
+                    "completionTimestamp": "2023-08-12T15:56:10.633Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate NSX-T Data Center Tier-0 and Tier-1 Router Input Data",
+                    "description": "Generate NSX-T Data Center Tier-0 and Tier-1 Router Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:56:10.695Z",
+                    "completionTimestamp": "2023-08-12T15:56:11.052Z",
+                    "errors": []
+                },
+                {
+                    "name": "Automation Helper Action",
+                    "description": "Automation Helper Action",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:56:11.125Z",
+                    "completionTimestamp": "2023-08-12T15:56:11.480Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Tier-0 Router",
+                    "description": "Create NSX-T Data Center Tier-0 Router",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:56:11.539Z",
+                    "completionTimestamp": "2023-08-12T16:01:17.989Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Tier-0 Locale Services",
+                    "description": "Create NSX-T Data Center Tier-0 Locale Services",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:01:18.057Z",
+                    "completionTimestamp": "2023-08-12T16:01:19.194Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Tier-0 Interface",
+                    "description": "Create NSX-T Data Center Tier-0 Interface",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:01:19.246Z",
+                    "completionTimestamp": "2023-08-12T16:01:21.544Z",
+                    "errors": []
+                },
+                {
+                    "name": "Initialize NSX-T Data Center Tier-0 Routing Setting",
+                    "description": "Initialize NSX-T Data Center Tier-0 Routing Setting",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:01:21.602Z",
+                    "completionTimestamp": "2023-08-12T16:01:22.171Z",
+                    "errors": []
+                },
+                {
+                    "name": "Enable NSX-T Data Center Tier-0 BGP",
+                    "description": "Enable NSX-T Data Center Tier-0 BGP",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:01:22.225Z",
+                    "completionTimestamp": "2023-08-12T16:01:22.809Z",
+                    "errors": []
+                },
+                {
+                    "name": "Set NSX-T Data Center Tier-0 BGP Neighbor Configuration",
+                    "description": "Set NSX-T Data Center Tier-0 BGP Neighbor Configuration",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:01:22.844Z",
+                    "completionTimestamp": "2023-08-12T16:01:24.080Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create and Configure NSX-T Data Center Tier-1 Gateway",
+                    "description": "Create and Configure NSX-T Data Center Tier-1 Gateway",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:01:24.149Z",
+                    "completionTimestamp": "2023-08-12T16:06:34.092Z",
+                    "errors": []
+                },
+                {
+                    "name": "Verify NSX-T Data Center Tier-0 to Tier-1 Connectivity",
+                    "description": "Verify NSX-T Data Center Tier-0 to Tier-1 Connectivity",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:06:34.171Z",
+                    "completionTimestamp": "2023-08-12T16:06:34.478Z",
+                    "errors": []
+                },
+                {
+                    "name": "Automation Helper Action",
+                    "description": "Automation Helper Action",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:06:34.549Z",
+                    "completionTimestamp": "2023-08-12T16:06:34.873Z",
+                    "errors": []
+                },
+                {
+                    "name": "Verify NSX-T Data Center BGP Peering",
+                    "description": "Verify NSX-T Data Center BGP Peering",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:06:34.938Z",
+                    "completionTimestamp": "2023-08-12T16:22:55.709Z",
+                    "errors": []
+                },
+                {
+                    "name": "Verify BGP Route Distribution",
+                    "description": "Verify BGP Route Distribution",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:22:55.737Z",
+                    "completionTimestamp": "2023-08-12T16:22:57.831Z",
+                    "errors": []
+                },
+                {
+                    "name": "Validate NSX-T Data Center Edge Cluster Status",
+                    "description": "Validate NSX-T Data Center Edge Cluster Status",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:22:57.903Z",
+                    "completionTimestamp": "2023-08-12T16:22:58.184Z",
+                    "errors": []
+                },
+                {
+                    "name": "Retrieve Transport Zone IDs from NSX-T Data Center Manager",
+                    "description": "Retrieve Transport Zone IDs from NSX-T Data Center Manager",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:22:58.245Z",
+                    "completionTimestamp": "2023-08-12T16:22:58.957Z",
+                    "errors": []
+                },
+                {
+                    "name": "Add SSH Host Key Of Edge Node VMs To Known Hosts File Of SDDC Manager",
+                    "description": "Add SSH Host Key Of Edge Node VMs To Known Hosts File Of SDDC Manager",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:22:59.011Z",
+                    "completionTimestamp": "2023-08-12T16:22:59.596Z",
+                    "errors": []
+                },
+                {
+                    "name": "Enable/Disable SSH on NSX-T Data Center Edge Nodes",
+                    "description": "Enable/Disable SSH on NSX-T Data Center Edge Nodes",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:22:59.652Z",
+                    "completionTimestamp": "2023-08-12T16:23:22.146Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update SDDC Manager Inventory with  NSX-T Data Center Edge Cluster Status",
+                    "description": "Update SDDC Manager Inventory with  NSX-T Data Center Edge Cluster Status",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:23:22.218Z",
+                    "completionTimestamp": "2023-08-12T16:23:22.345Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update NSX-T edge cluster and transport zone ID association in inventory",
+                    "description": "Update NSX-T edge cluster and transport zone ID association in inventory",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:23:22.399Z",
+                    "completionTimestamp": "2023-08-12T16:23:22.516Z",
+                    "errors": []
+                },
+                {
+                    "name": "Release Lock on SDDC Manager",
+                    "description": "Release Lock on SDDC Manager",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T16:23:22.579Z",
+                    "completionTimestamp": "2023-08-12T16:23:22.690Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX Vlan Tagged Segment",
+                    "description": "Create NSX Vlan Tagged Segment",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:56:05.470Z",
+                    "completionTimestamp": "2023-08-12T15:56:10.308Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX Vlan Tagged Segment",
+                    "description": "Create NSX Vlan Tagged Segment",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:55:59.853Z",
+                    "completionTimestamp": "2023-08-12T15:56:05.057Z",
+                    "errors": []
+                },
+                {
+                    "name": "Deploy NSX-T Data Center Edge Node VM",
+                    "description": "Deploy NSX-T Data Center Edge Node VM",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:37:04.748Z",
+                    "completionTimestamp": "2023-08-12T15:55:28.281Z",
+                    "errors": []
+                },
+                {
+                    "name": "Deploy NSX-T Data Center Edge Node VM",
+                    "description": "Deploy NSX-T Data Center Edge Node VM",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-12T15:18:42.495Z",
+                    "completionTimestamp": "2023-08-12T15:37:04.250Z",
+                    "errors": []
+                }
+            ],
+            "errors": [],
+            "resolutionStatus": "UNRESOLVED",
+            "isCancellable": false
+        },
+        {
+            "id": "8550edf4-7f4f-43c6-9915-a8933180a5f9",
+            "name": "Adding edge cluster sfo-m1-cl01-edge",
+            "type": "NSXT_EDGECLUSTER_CREATION",
+            "status": "Successful",
+            "creationTimestamp": "2023-08-09T17:54:49.831Z",
+            "completionTimestamp": "2023-08-09T19:01:43.048Z",
+            "subTasks": [
+                {
+                    "name": "Acquire Lock on SDDC Manager",
+                    "description": "Acquire Lock on SDDC Manager",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:54:50.910Z",
+                    "completionTimestamp": "2023-08-09T17:54:51.204Z",
+                    "errors": []
+                },
+                {
+                    "name": "Automation Helper Action",
+                    "description": "Automation Helper Action",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:54:51.353Z",
+                    "completionTimestamp": "2023-08-09T17:54:51.789Z",
+                    "errors": []
+                },
+                {
+                    "name": "Fetch and Validate VMware Cloud Foundation vCenter Cluster IDs",
+                    "description": "Fetch and Validate VMware Cloud Foundation vCenter Cluster IDs",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:54:51.904Z",
+                    "completionTimestamp": "2023-08-09T17:54:52.237Z",
+                    "errors": []
+                },
+                {
+                    "name": "Fetch Credentials from Inventory",
+                    "description": "Fetch Credentials from Inventory",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:54:52.284Z",
+                    "completionTimestamp": "2023-08-09T17:54:53.319Z",
+                    "errors": []
+                },
+                {
+                    "name": "Obtain SDDC Manager Inventory Data",
+                    "description": "Obtain SDDC Manager Inventory Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:54:53.470Z",
+                    "completionTimestamp": "2023-08-09T17:54:56.468Z",
+                    "errors": []
+                },
+                {
+                    "name": "Fetch NSX-T Data Center Overlay Transport Zone",
+                    "description": "Fetch NSX-T Data Center Overlay Transport Zone",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:54:56.560Z",
+                    "completionTimestamp": "2023-08-09T17:54:57.001Z",
+                    "errors": []
+                },
+                {
+                    "name": "Fetch NSX enabled VDS uplinks used for overlay",
+                    "description": "Fetch NSX enabled VDS uplinks used for overlay",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:54:57.048Z",
+                    "completionTimestamp": "2023-08-09T17:54:57.621Z",
+                    "errors": []
+                },
+                {
+                    "name": "Ensure Edge Node NSX VDS Uplink Values are Present",
+                    "description": "Ensure Edge Node NSX VDS Uplink Values are Present",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:54:57.671Z",
+                    "completionTimestamp": "2023-08-09T17:54:57.998Z",
+                    "errors": []
+                },
+                {
+                    "name": "Pre-Validation of NSX-T Data Center Edge Cluster Deployment",
+                    "description": "Pre-Validation of NSX-T Data Center Edge Cluster Deployment",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:54:58.043Z",
+                    "completionTimestamp": "2023-08-09T17:56:50.653Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate Edge Cluster Input Data",
+                    "description": "Generate Edge Cluster Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:56:50.712Z",
+                    "completionTimestamp": "2023-08-09T17:56:51.404Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update SDDC Manager Inventory with NSX-T Data Center Edge Cluster",
+                    "description": "Update SDDC Manager Inventory with NSX-T Data Center Edge Cluster",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:56:51.443Z",
+                    "completionTimestamp": "2023-08-09T17:56:51.679Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create Resource Pool(s)",
+                    "description": "Create Resource Pool(s)",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:56:51.790Z",
+                    "completionTimestamp": "2023-08-09T17:56:53.042Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate Host Switch Profile Input Data",
+                    "description": "Generate Host Switch Profile Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:56:53.150Z",
+                    "completionTimestamp": "2023-08-09T17:56:53.604Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Host Switch Uplink Profiles",
+                    "description": "Create NSX-T Data Center Host Switch Uplink Profiles",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:56:53.699Z",
+                    "completionTimestamp": "2023-08-09T17:56:55.164Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Transport Zone Teaming Policy",
+                    "description": "Create NSX-T Data Center Transport Zone Teaming Policy",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:56:55.260Z",
+                    "completionTimestamp": "2023-08-09T17:56:56.600Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate VLAN Port Group Input Data",
+                    "description": "Generate VLAN Port Group Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:56:56.687Z",
+                    "completionTimestamp": "2023-08-09T17:56:57.039Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create Trunked Port VLAN Port Group",
+                    "description": "Create Trunked Port VLAN Port Group",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:56:57.137Z",
+                    "completionTimestamp": "2023-08-09T17:57:03.253Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update SDDC Manager Inventory with VLAN Port Groups",
+                    "description": "Update SDDC Manager Inventory with VLAN Port Groups",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:57:03.350Z",
+                    "completionTimestamp": "2023-08-09T17:57:03.577Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate NSX-T Data Center Edge Cluster Input Data",
+                    "description": "Generate NSX-T Data Center Edge Cluster Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:57:03.674Z",
+                    "completionTimestamp": "2023-08-09T17:57:04.084Z",
+                    "errors": []
+                },
+                {
+                    "name": "Deploy and Configure Multiple NSX-T Data Center Edge Nodes",
+                    "description": "Deploy and Configure Multiple NSX-T Data Center Edge Nodes",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:57:04.152Z",
+                    "completionTimestamp": "2023-08-09T18:36:54.808Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update SDDC Manager Inventory with NSX-T Data Center Edge Node IDs",
+                    "description": "Update SDDC Manager Inventory with NSX-T Data Center Edge Node IDs",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:36:54.881Z",
+                    "completionTimestamp": "2023-08-09T18:36:55.138Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create Anti-Affinity Rule for NSX-T Data Center Edge Nodes",
+                    "description": "Create Anti-Affinity Rule for NSX-T Data Center Edge Nodes",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:36:55.238Z",
+                    "completionTimestamp": "2023-08-09T18:47:03.041Z",
+                    "errors": []
+                },
+                {
+                    "name": "Override VM HA Isolation Response For Clusters",
+                    "description": "Override VM HA Isolation Response For Clusters",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:03.133Z",
+                    "completionTimestamp": "2023-08-09T18:47:14.806Z",
+                    "errors": []
+                },
+                {
+                    "name": "Override HA VM Restart Priority For Clusters",
+                    "description": "Override HA VM Restart Priority For Clusters",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:14.896Z",
+                    "completionTimestamp": "2023-08-09T18:47:25.799Z",
+                    "errors": []
+                },
+                {
+                    "name": "Automation Helper Action",
+                    "description": "Automation Helper Action",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:25.871Z",
+                    "completionTimestamp": "2023-08-09T18:47:26.156Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate NSX-T Data Center Edge Profile Input Data",
+                    "description": "Generate NSX-T Data Center Edge Profile Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:26.236Z",
+                    "completionTimestamp": "2023-08-09T18:47:26.557Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Edge High Availability Profile",
+                    "description": "Create NSX-T Data Center Edge High Availability Profile",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:26.587Z",
+                    "completionTimestamp": "2023-08-09T18:47:27.735Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Edge Cluster",
+                    "description": "Create NSX-T Data Center Edge Cluster",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:27.831Z",
+                    "completionTimestamp": "2023-08-09T18:47:29.359Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update SDDC Manager Inventory with NSX-T Data Center Edge Cluster Source ID",
+                    "description": "Update SDDC Manager Inventory with NSX-T Data Center Edge Cluster Source ID",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:29.430Z",
+                    "completionTimestamp": "2023-08-09T18:47:29.560Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Edge Cluster Credentials",
+                    "description": "Create NSX-T Data Center Edge Cluster Credentials",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:29.641Z",
+                    "completionTimestamp": "2023-08-09T18:47:31.936Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Edge Cluster Uplink Segments",
+                    "description": "Create NSX-T Data Center Edge Cluster Uplink Segments",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:32.020Z",
+                    "completionTimestamp": "2023-08-09T18:47:44.446Z",
+                    "errors": []
+                },
+                {
+                    "name": "Generate NSX-T Data Center Tier-0 and Tier-1 Router Input Data",
+                    "description": "Generate NSX-T Data Center Tier-0 and Tier-1 Router Input Data",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:44.526Z",
+                    "completionTimestamp": "2023-08-09T18:47:44.890Z",
+                    "errors": []
+                },
+                {
+                    "name": "Automation Helper Action",
+                    "description": "Automation Helper Action",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:44.947Z",
+                    "completionTimestamp": "2023-08-09T18:47:45.378Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Tier-0 Router",
+                    "description": "Create NSX-T Data Center Tier-0 Router",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:45.457Z",
+                    "completionTimestamp": "2023-08-09T18:52:51.919Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Tier-0 Locale Services",
+                    "description": "Create NSX-T Data Center Tier-0 Locale Services",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:52:52.009Z",
+                    "completionTimestamp": "2023-08-09T18:52:53.726Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX-T Data Center Tier-0 Interface",
+                    "description": "Create NSX-T Data Center Tier-0 Interface",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:52:53.809Z",
+                    "completionTimestamp": "2023-08-09T18:52:56.866Z",
+                    "errors": []
+                },
+                {
+                    "name": "Initialize NSX-T Data Center Tier-0 Routing Setting",
+                    "description": "Initialize NSX-T Data Center Tier-0 Routing Setting",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:52:56.931Z",
+                    "completionTimestamp": "2023-08-09T18:52:57.822Z",
+                    "errors": []
+                },
+                {
+                    "name": "Enable NSX-T Data Center Tier-0 BGP",
+                    "description": "Enable NSX-T Data Center Tier-0 BGP",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:52:57.905Z",
+                    "completionTimestamp": "2023-08-09T18:52:58.671Z",
+                    "errors": []
+                },
+                {
+                    "name": "Set NSX-T Data Center Tier-0 BGP Neighbor Configuration",
+                    "description": "Set NSX-T Data Center Tier-0 BGP Neighbor Configuration",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:52:58.702Z",
+                    "completionTimestamp": "2023-08-09T18:53:00.295Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create and Configure NSX-T Data Center Tier-1 Gateway",
+                    "description": "Create and Configure NSX-T Data Center Tier-1 Gateway",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:53:00.358Z",
+                    "completionTimestamp": "2023-08-09T18:58:12.325Z",
+                    "errors": []
+                },
+                {
+                    "name": "Verify NSX-T Data Center Tier-0 to Tier-1 Connectivity",
+                    "description": "Verify NSX-T Data Center Tier-0 to Tier-1 Connectivity",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:58:12.389Z",
+                    "completionTimestamp": "2023-08-09T18:58:12.846Z",
+                    "errors": []
+                },
+                {
+                    "name": "Automation Helper Action",
+                    "description": "Automation Helper Action",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:58:12.922Z",
+                    "completionTimestamp": "2023-08-09T18:58:13.244Z",
+                    "errors": []
+                },
+                {
+                    "name": "Verify NSX-T Data Center BGP Peering",
+                    "description": "Verify NSX-T Data Center BGP Peering",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:58:13.337Z",
+                    "completionTimestamp": "2023-08-09T19:01:15.489Z",
+                    "errors": []
+                },
+                {
+                    "name": "Verify BGP Route Distribution",
+                    "description": "Verify BGP Route Distribution",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T19:01:15.517Z",
+                    "completionTimestamp": "2023-08-09T19:01:17.968Z",
+                    "errors": []
+                },
+                {
+                    "name": "Validate NSX-T Data Center Edge Cluster Status",
+                    "description": "Validate NSX-T Data Center Edge Cluster Status",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T19:01:18.061Z",
+                    "completionTimestamp": "2023-08-09T19:01:18.556Z",
+                    "errors": []
+                },
+                {
+                    "name": "Retrieve Transport Zone IDs from NSX-T Data Center Manager",
+                    "description": "Retrieve Transport Zone IDs from NSX-T Data Center Manager",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T19:01:18.600Z",
+                    "completionTimestamp": "2023-08-09T19:01:19.354Z",
+                    "errors": []
+                },
+                {
+                    "name": "Add SSH Host Key Of Edge Node VMs To Known Hosts File Of SDDC Manager",
+                    "description": "Add SSH Host Key Of Edge Node VMs To Known Hosts File Of SDDC Manager",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T19:01:19.425Z",
+                    "completionTimestamp": "2023-08-09T19:01:20.113Z",
+                    "errors": []
+                },
+                {
+                    "name": "Enable/Disable SSH on NSX-T Data Center Edge Nodes",
+                    "description": "Enable/Disable SSH on NSX-T Data Center Edge Nodes",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T19:01:20.179Z",
+                    "completionTimestamp": "2023-08-09T19:01:42.375Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update SDDC Manager Inventory with  NSX-T Data Center Edge Cluster Status",
+                    "description": "Update SDDC Manager Inventory with  NSX-T Data Center Edge Cluster Status",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T19:01:42.431Z",
+                    "completionTimestamp": "2023-08-09T19:01:42.552Z",
+                    "errors": []
+                },
+                {
+                    "name": "Update NSX-T edge cluster and transport zone ID association in inventory",
+                    "description": "Update NSX-T edge cluster and transport zone ID association in inventory",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T19:01:42.616Z",
+                    "completionTimestamp": "2023-08-09T19:01:42.766Z",
+                    "errors": []
+                },
+                {
+                    "name": "Release Lock on SDDC Manager",
+                    "description": "Release Lock on SDDC Manager",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T19:01:42.813Z",
+                    "completionTimestamp": "2023-08-09T19:01:42.923Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX Vlan Tagged Segment",
+                    "description": "Create NSX Vlan Tagged Segment",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:38.659Z",
+                    "completionTimestamp": "2023-08-09T18:47:44.099Z",
+                    "errors": []
+                },
+                {
+                    "name": "Create NSX Vlan Tagged Segment",
+                    "description": "Create NSX Vlan Tagged Segment",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:47:32.459Z",
+                    "completionTimestamp": "2023-08-09T18:47:38.223Z",
+                    "errors": []
+                },
+                {
+                    "name": "Deploy NSX-T Data Center Edge Node VM",
+                    "description": "Deploy NSX-T Data Center Edge Node VM",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T18:18:30.496Z",
+                    "completionTimestamp": "2023-08-09T18:36:54.335Z",
+                    "errors": []
+                },
+                {
+                    "name": "Deploy NSX-T Data Center Edge Node VM",
+                    "description": "Deploy NSX-T Data Center Edge Node VM",
+                    "status": "SUCCESSFUL",
+                    "creationTimestamp": "2023-08-09T17:57:04.560Z",
+                    "completionTimestamp": "2023-08-09T18:18:29.919Z",
+                    "errors": []
+                }
+            ],
+            "errors": [],
+            "resolutionStatus": "UNRESOLVED",
+            "isCancellable": false
+        }
+    ]
+}
