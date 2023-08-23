@@ -1,0 +1,16 @@
+// curl http: //localhost/inventory/vcenters -k | json_pp
+[
+    {
+        "hostName": "vc-md-vcf0-ko.rainpole.dev",
+        "datastoreForVmDeploymentName": "cl1-md-vcf0-ko-vsan01",
+        "managementIpAddress": "172.16.11.62",
+        "id": "0c3c5ab7-0362-4118-9dc6-9a229c76c106",
+        "bundleRepoDatastore": "lcm-bundle-repo",
+        "domainType": "MANAGEMENT",
+        "pscId": "ab1729bf-cad0-482b-ba8a-5c99fd2b570a",
+        "status": "ACTIVE",
+        "vmName": "vc-md-vcf0-ko",
+        "version": "7.0.3.01000-20395099",
+        "domainId": "cc040fb2-3ca9-45fd-b718-0dea2ed2ae61"
+    }
+]
