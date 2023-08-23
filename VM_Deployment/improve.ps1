@@ -1,23 +1,20 @@
-$vmname = "jet-db01-orange"
-$ip = "172.16.11.201"
-$subnetmask = "255.255.255.0"
-$gateway = "172.16.151.253"
-$vmlocation = "jetx_vms"
+$vmname = "web11-blue"
+$ip = "172.16.50.11"
+$vmlocation = "Linux"
 $datastorename = "cl1-md-vcf0-ko-vsan01"
-$specname = "jetlinux"
+$specname = "ubuntu"
+$subnetmask = "255.255.255.0"
+$gateway = "172.16.50.253"
 $vmhostname = "esxi1-cl1-md-vcf0-ko.rainpole.dev"
-$templatename = "masterubuntu"
+$templatename = "master_ubuntu"
 $vsanpolicyName = "Policy-SFTT1"
-
 
 $template = get-template -Name $templatename
 $specs = Get-OSCustomizationSpec -Name $specname
 $datastore = get-datastore -Name $datastorename
 $vsansp = Get-SpbmStoragePolicy -Name $vsanpolicyName
-$destination = Get-Folder -Name $vmlocation
-
 Get-OSCustomizationSpec $specs | Get-OSCustomizationNicMapping | Set-OSCustomizationNicMapping -IpMode UseStaticIP -IpAddress $ip -SubnetMask $subnetmask -DefaultGateway $gateway
-New-VM -Name $vmname -Template $template -Datastore $datastore -VMHost (get-vmhost $vmhostname) -OSCustomizationSpec $specs -Location $destination -StoragePolicy $vsansp
+New-VM -Name $vmname -Template $template -Datastore $datastore -VMHost (get-vmhost $vmhostname) -OSCustomizationSpec $specs -Location (Get-Folder -Name $vmlocation) -StoragePolicy $vsansp
 write-host "Waiting for 10 seconds"
 Start-Sleep -Seconds 10
 Get-VM $vmname | Get-NetworkAdapter | Set-NetworkAdapter -StartConnected $true -Confirm:$false -OutVariable $null
@@ -32,7 +29,7 @@ do {
     $tools = $vm.ExtensionData.Guest.ToolsRunningStatus
     
 } 
-while ($tools -eq "guestToolsNotRunning")
+while ($tools -eq "guestToolsRunning")
 
 write-host "VMware tools status $($tools)"
     
@@ -43,7 +40,7 @@ do {
     $vm = get-vm $vmname
     $ipallocated = $vm.ExtensionData.Guest.IpAddress
 }
-while ($null -eq $ipallocated)
+while ($null -ne $ipallocated)
 
 
 if ($ipallocated -match $ip) {
