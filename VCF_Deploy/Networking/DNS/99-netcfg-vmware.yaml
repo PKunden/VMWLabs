@@ -1,0 +1,110 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens160:
+      dhcp4: true
+      mtu: 1500
+      dhcp-identifier: mac
+      critical: true
+    ens192:
+      mtu: 8960
+      addresses:
+              - 192.168.0.253/16
+  vlans:
+          vlan1611:
+                  id: 1611
+                  link: ens192
+                  addresses: 
+                  - 172.16.11.253/24
+                  # sfo-m01 - Management
+          vlan1612:
+                  id: 1612
+                  link: ens192
+                  addresses:
+                  - 172.16.12.253/24
+                  # sfo-m01 - vMotion 
+          vlan1613:
+                  id: 1613
+                  link: ens192
+                  addresses:
+                  - 172.16.13.253/24
+                  # sfo-m01 - vSAN
+          vlan1614:
+                  id: 1614
+                  link: ens192
+                  addresses:
+                  - 172.16.14.253/24
+                  # sfo-m01 - NSX Host Overlay
+          vlan1615:
+                  id: 1615
+                  link: ens192
+                  addresses:
+                  - 172.16.15.253/24
+                  # sfo-m01 - NSX Edge Uplink 1
+          vlan1616:
+                  id: 1616
+                  link: ens192
+                  addresses:
+                  - 172.16.16.253/24
+                  # sfo-m01 - NSX Edge Uplink 2
+          vlan1617:
+                  id: 1617
+                  link: ens192
+                  addresses:
+                  - 172.16.17.253/24
+                  # sfo-m01 - NSX Edge Overlay
+          vlan1618:
+                  id: 1618
+                  link: ens192
+                  addresses:
+                  - 172.16.18.253/24
+                  # sfo-m01 - NSX RTEP Overlay
+          vlan1621:
+                  id: 1621
+                  link: ens192
+                  addresses:
+                  - 172.16.21.253/24
+                  # sfo-w01 - Management
+          vlan1622:
+                  id: 1622
+                  link: ens192
+                  addresses:
+                  - 172.16.22.253/24
+                  # sfo-w01 - vMotion
+          vlan1623:
+                  id: 1623
+                  link: ens192
+                  addresses:
+                  - 172.16.23.253/24
+                  # sfo-w01 - vSAN
+          vlan1624:
+                  id: 1624
+                  link: ens192
+                  addresses:
+                  - 172.16.24.253/24
+                  # sfo-w01 - NSX Host Overlay
+          vlan1625:
+                  id: 1625
+                  link: ens192
+                  addresses:
+                  - 172.16.25.253/24
+                  # sfo-w01 - NSX Edge uplink 1
+          vlan1626:
+                  id: 1626
+                  link: ens192
+                  addresses:
+                  - 172.16.26.253/24
+                  # sfo-w01 - NSX Edge Uplink 2
+          vlan1627:
+                  id: 1627
+                  link: ens192
+                  addresses:
+                  - 172.16.27.253/24
+                  # sfo-w01 - NSX Edge Overlay
+          vlan1628:
+                  id: 1628
+                  link: ens192
+                  addresses:
+                  - 172.16.28.253/24
+                  # sfo-w01 - NSX RTEP Overlay

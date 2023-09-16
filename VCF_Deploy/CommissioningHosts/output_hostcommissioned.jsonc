@@ -1,0 +1,339 @@
+{
+    "id": "4f145540-36b9-4572-b2f4-91e5b93d5874",
+    "name": "Commissioning host(s) esxi1-cl1-wld1-vcf0-ko.rainpole.dev,esxi2-cl1-wld1-vcf0-ko.rainpole.dev,esxi3-cl1-wld1-vcf0-ko.rainpole.dev to VMware Cloud Foundation",
+    "type": "HOST_COMMISSION",
+    "status": "Successful",
+    "creationTimestamp": "2023-08-24T15:22:40.726Z",
+    "completionTimestamp": "2023-08-24T15:25:57.568Z",
+    "subTasks": [
+        {
+            "name": "AcquireResoureLocksIfResourcesExistsAction",
+            "description": "Acquire SDDC Manager Resources Lock if Resources exists",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:22:41.172Z",
+            "completionTimestamp": "2023-08-24T15:22:41.255Z",
+            "errors": []
+        },
+        {
+            "name": "ModifyInputBeforeRetryCommAction",
+            "description": "Removes hosts (missing from DB) from orchestrator metadata before retrying a failed commissioning workflow",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:22:41.321Z",
+            "completionTimestamp": "2023-08-24T15:22:41.387Z",
+            "errors": []
+        },
+        {
+            "name": "UpdateStatusBeforeRetryCommAction",
+            "description": "Performing Cleanup of SDDC Inventory Before Retrying the Failed ESXi Host Commissioning Workflow",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:22:41.446Z",
+            "completionTimestamp": "2023-08-24T15:22:41.537Z",
+            "errors": []
+        },
+        {
+            "name": "ValidateHostsAction",
+            "description": "Validate ESXi Hosts Before Starting the Commissioning Process",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:22:41.609Z",
+            "completionTimestamp": "2023-08-24T15:23:00.623Z",
+            "errors": []
+        },
+        {
+            "name": "ValidateSystemLockAvailabilityAction",
+            "description": "Validate System Lock Availability on SDDC Manager",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:23:00.701Z",
+            "completionTimestamp": "2023-08-24T15:23:00.818Z",
+            "errors": []
+        },
+        {
+            "name": "SaveToInventoryAction",
+            "description": "Update SDDC Manager Inventory with New ESXi Hosts and Associate with Given Network Pool",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:23:00.885Z",
+            "completionTimestamp": "2023-08-24T15:23:01.372Z",
+            "errors": []
+        },
+        {
+            "name": "GenerateAcquireResourcesLockData",
+            "description": "Generate SDDC Manager Acquire Host(s) Lock Data",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:23:01.435Z",
+            "completionTimestamp": "2023-08-24T15:23:01.750Z",
+            "errors": []
+        },
+        {
+            "name": "AcquireResoureLocksAction",
+            "description": "Acquire SDDC Manager Host(s) Lock",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:23:01.768Z",
+            "completionTimestamp": "2023-08-24T15:23:01.885Z",
+            "errors": []
+        },
+        {
+            "name": "UpdateTaskRegistrationAction",
+            "description": "Updates SDDC Manager Task-Registration with New Resource IDs",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:23:01.936Z",
+            "completionTimestamp": "2023-08-24T15:23:02.117Z",
+            "errors": []
+        },
+        {
+            "name": "FetchDnsAndNtpAction",
+            "description": "Gather DNS and NTP Server Details",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:23:02.171Z",
+            "completionTimestamp": "2023-08-24T15:23:02.344Z",
+            "errors": []
+        },
+        {
+            "name": "FetchNfsMountsAction",
+            "description": "Gather NFS Mount Point Details",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:23:02.514Z",
+            "completionTimestamp": "2023-08-24T15:23:02.719Z",
+            "errors": []
+        },
+        {
+            "name": "GenerateEsxiConfigurationInput",
+            "description": "Gather New ESXi Hosts Details",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:23:02.894Z",
+            "completionTimestamp": "2023-08-24T15:23:04.289Z",
+            "errors": []
+        },
+        {
+            "name": "UpdateKnownHostsOnSddcManagerAction",
+            "description": "Update SDDC Manager known_hosts with New ESXi Host SSH Keys",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:23:04.339Z",
+            "completionTimestamp": "2023-08-24T15:23:04.590Z",
+            "errors": []
+        },
+        {
+            "name": "InstallTemporaryESXiCertificateAction",
+            "description": "Install Temporary VMCA Certificate For Host Commissioning",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:23:04.662Z",
+            "completionTimestamp": "2023-08-24T15:24:26.868Z",
+            "errors": []
+        },
+        {
+            "name": "UpdateInputForDisableEsxiLockdownMode",
+            "description": "Update Input for disable ESXi lockdown mode",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:26.942Z",
+            "completionTimestamp": "2023-08-24T15:24:27.282Z",
+            "errors": []
+        },
+        {
+            "name": "Retrieve ESXi Host Lockdown Mode Configuration",
+            "description": "Retrieve ESXi Host Lockdown Mode Configuration",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:27.368Z",
+            "completionTimestamp": "2023-08-24T15:24:28.053Z",
+            "errors": []
+        },
+        {
+            "name": "Disable Lockdown Mode on ESXi Hosts",
+            "description": "Disable Lockdown Mode on ESXi Hosts",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:28.072Z",
+            "completionTimestamp": "2023-08-24T15:24:29.050Z",
+            "errors": []
+        },
+        {
+            "name": "UpdateInputToCreateEsxiServiceAccounts",
+            "description": "Update Input To Create Esxi Service Accounts.",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:29.110Z",
+            "completionTimestamp": "2023-08-24T15:24:29.416Z",
+            "errors": []
+        },
+        {
+            "name": "Create New Local ESXi User",
+            "description": "Create New Local ESXi User",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:29.489Z",
+            "completionTimestamp": "2023-08-24T15:24:30.769Z",
+            "errors": []
+        },
+        {
+            "name": "Assign Role to New ESXi User",
+            "description": "Assign Role to New ESXi User",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:30.833Z",
+            "completionTimestamp": "2023-08-24T15:24:31.608Z",
+            "errors": []
+        },
+        {
+            "name": "Grant Administrator Access to ESXi Users",
+            "description": "Grant Administrator Access to ESXi Users",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:31.684Z",
+            "completionTimestamp": "2023-08-24T15:24:32.518Z",
+            "errors": []
+        },
+        {
+            "name": "Add Service Account to ESXi Lockdown Mode Exception Users List",
+            "description": "Add Service Account to ESXi Lockdown Mode Exception Users List",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:32.596Z",
+            "completionTimestamp": "2023-08-24T15:24:33.583Z",
+            "errors": []
+        },
+        {
+            "name": "GenerateInputForConfiguringEsxiLockdownModeAction",
+            "description": "Generate Data for configuring ESXi lock down mode",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:33.652Z",
+            "completionTimestamp": "2023-08-24T15:24:34.043Z",
+            "errors": []
+        },
+        {
+            "name": "Configure Lockdown Mode on ESXi Hosts",
+            "description": "Configure Lockdown Mode on ESXi Hosts",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:34.092Z",
+            "completionTimestamp": "2023-08-24T15:24:35.062Z",
+            "errors": []
+        },
+        {
+            "name": "ConfigureDnsAction",
+            "description": "Configure DNS Server Details on New ESXi Hosts",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:35.123Z",
+            "completionTimestamp": "2023-08-24T15:24:35.538Z",
+            "errors": []
+        },
+        {
+            "name": "ConfigureNtpAction",
+            "description": "Configure NTP Server Details on New ESXi Hosts",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:24:35.613Z",
+            "completionTimestamp": "2023-08-24T15:25:10.135Z",
+            "errors": []
+        },
+        {
+            "name": "FetchHostsAttributesAction",
+            "description": "Gather All Attributes (Including ESXi Version) for New ESXi Hosts",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:25:10.213Z",
+            "completionTimestamp": "2023-08-24T15:25:24.967Z",
+            "errors": []
+        },
+        {
+            "name": "CreateNfsDatastoreAction",
+            "description": "Configure NFS Datastore on New ESXi Hosts",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:25:25.014Z",
+            "completionTimestamp": "2023-08-24T15:25:25.841Z",
+            "errors": []
+        },
+        {
+            "name": "RotateHostSshKeysAction",
+            "description": "Rotate SSH Keys for New ESXi Hosts",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:25:25.916Z",
+            "completionTimestamp": "2023-08-24T15:25:52.545Z",
+            "errors": []
+        },
+        {
+            "name": "UpdateInputForDisableSshOnEsxiHostsAction",
+            "description": "Update Input to Disable SSH on ESXi hosts",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:25:52.616Z",
+            "completionTimestamp": "2023-08-24T15:25:52.991Z",
+            "errors": []
+        },
+        {
+            "name": "Disable SSH on ESXi host",
+            "description": "Disable SSH on ESXi host",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:25:53.041Z",
+            "completionTimestamp": "2023-08-24T15:25:53.832Z",
+            "errors": []
+        },
+        {
+            "name": "UpdateInventoryAction",
+            "description": "Update SDDC Manager Logical Inventory with New ESXi Hosts",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:25:53.883Z",
+            "completionTimestamp": "2023-08-24T15:25:55.039Z",
+            "errors": []
+        },
+        {
+            "name": "Add ESXi Root Credentials to SDDC Manager Credentials Store",
+            "description": "Add ESXi Root Credentials to SDDC Manager Credentials Store",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:25:55.080Z",
+            "completionTimestamp": "2023-08-24T15:25:56.330Z",
+            "errors": []
+        },
+        {
+            "name": "GenerateReleaseResourcesLockData",
+            "description": "Generate SDDC Manager Release Host(s) Lock Data",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:25:56.411Z",
+            "completionTimestamp": "2023-08-24T15:25:56.724Z",
+            "errors": []
+        },
+        {
+            "name": "ReleaseResourceLocksAction",
+            "description": "Release SDDC Manager Host(s) Lock",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:25:56.756Z",
+            "completionTimestamp": "2023-08-24T15:25:56.858Z",
+            "errors": []
+        },
+        {
+            "name": "GenerateInputToCleanSkippedHostConfigurationAction",
+            "description": "Generate Input To Clean Skipped Hosts Configuration",
+            "status": "SUCCESSFUL",
+            "creationTimestamp": "2023-08-24T15:25:56.913Z",
+            "completionTimestamp": "2023-08-24T15:25:57.109Z",
+            "errors": []
+        },
+        {
+            "name": "CleanNfsConfigurationAction",
+            "description": "[Applicable to skipped ESXi Hosts]Remove NFS Configuration from ESXi Host",
+            "status": "NOT_APPLICABLE",
+            "creationTimestamp": "2023-08-24T15:25:57.131Z",
+            "completionTimestamp": "2023-08-24T15:25:57.316Z",
+            "errors": []
+        },
+        {
+            "name": "RemoveHostFromKnownHostsAction",
+            "description": "[Applicable to skipped ESXi Hosts]Remove ESXi Host From known_hosts File",
+            "status": "NOT_APPLICABLE",
+            "creationTimestamp": "2023-08-24T15:25:57.342Z",
+            "completionTimestamp": "2023-08-24T15:25:57.405Z",
+            "errors": []
+        },
+        {
+            "name": "DeleteHostFromInventoryAction",
+            "description": "[Applicable to skipped ESXi Hosts]Disassociate ESXi Host From Network Pool And Delete ESXi Host From Inventory",
+            "status": "NOT_APPLICABLE",
+            "creationTimestamp": "2023-08-24T15:25:57.425Z",
+            "completionTimestamp": "2023-08-24T15:25:57.492Z",
+            "errors": []
+        }
+    ],
+    "errors": [],
+    "resources": [
+        {
+            "resourceId": "f043af8a-7405-4d04-a895-5c2d4585e44e",
+            "type": "Esxi"
+        },
+        {
+            "resourceId": "ab0b0b6d-224a-4436-bb31-8e7797d69501",
+            "type": "Esxi"
+        },
+        {
+            "resourceId": "be406245-3398-4a00-8844-4940e874e418",
+            "type": "Esxi"
+        }
+    ],
+    "resolutionStatus": "UNRESOLVED",
+    "isCancellable": false
+}

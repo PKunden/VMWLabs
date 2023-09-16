@@ -1,0 +1,193 @@
+{
+    "domainCreationSpec": {
+        "domainName": "sfo-w01",
+        "vcenterSpec": {
+            "name": "sfo-w01-vc01", // name of the WLD Domain
+            "networkDetailsSpec": {
+                "ipAddress": "172.16.11.63", // IP of vCenter
+                "dnsName": "vc-wld1-vcf0-ko.rainpole.dev", // FQDN of VC
+                "gateway": "172.16.11.253",
+                "subnetMask": "255.255.255.0"
+            },
+            "rootPassword": "PSGlobalCloud123!", // vCenter Root Password
+            "datacenterName": "sfo-w01-dc01", // Datacenter Name
+            "vmSize": "medium" // size of vCenter
+        }, //vCenter details finished
+        "computeSpec": {
+            "clusterSpecs": [
+                {
+                    "name": "sfo-w01-cl01",
+                    "hostSpecs": [
+                        {
+                            "id": "ab0b0b6d-224a-4436-bb31-8e7797d69501", //first host ID
+                            "licenseKey": "JJ6TL-7MXD5-D8LN1-0NJU4-FJZ62",
+                            "username": "root",
+                            "hostNetworkSpec": {
+                                "vmNics": [
+                                    {
+                                        "id": "vmnic0",
+                                        "vdsName": "sfo-w01-cl01-vds01" //switch01
+                                    },
+                                    {
+                                        "id": "vmnic1",
+                                        "vdsName": "sfo-w01-cl01-vds01" //switch01
+                                    },
+                                    {
+                                        "id": "vmnic2",
+                                        "vdsName": "sfo-w01-cl01-vds02" //switch02
+                                    },
+                                    {
+                                        "id": "vmnic3",
+                                        "vdsName": "sfo-w01-cl01-vds02" //switch02
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "f043af8a-7405-4d04-a895-5c2d4585e44e", // second host ID
+                            "licenseKey": "JJ6TL-7MXD5-D8LN1-0NJU4-FJZ62",
+                            "username": "root",
+                            "hostNetworkSpec": {
+                                "vmNics": [
+                                    {
+                                        "id": "vmnic0",
+                                        "vdsName": "sfo-w01-cl01-vds01"
+                                    },
+                                    {
+                                        "id": "vmnic1",
+                                        "vdsName": "sfo-w01-cl01-vds01"
+                                    },
+                                    {
+                                        "id": "vmnic2",
+                                        "vdsName": "sfo-w01-cl01-vds02"
+                                    },
+                                    {
+                                        "id": "vmnic3",
+                                        "vdsName": "sfo-w01-cl01-vds02"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "be406245-3398-4a00-8844-4940e874e418", // third host ID
+                            "licenseKey": "JJ6TL-7MXD5-D8LN1-0NJU4-FJZ62",
+                            "username": "root",
+                            "hostNetworkSpec": {
+                                "vmNics": [
+                                    {
+                                        "id": "vmnic0",
+                                        "vdsName": "sfo-w01-cl01-vds01"
+                                    },
+                                    {
+                                        "id": "vmnic1",
+                                        "vdsName": "sfo-w01-cl01-vds01"
+                                    },
+                                    {
+                                        "id": "vmnic2",
+                                        "vdsName": "sfo-w01-cl01-vds02"
+                                    },
+                                    {
+                                        "id": "vmnic3",
+                                        "vdsName": "sfo-w01-cl01-vds02"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "datastoreSpec": {
+                        "vsanDatastoreSpec": {
+                            "failuresToTolerate": 1,
+                            "licenseKey": "X02TH-9JW45-R82N0-0EYA0-1XCJ3", //VSAN License
+                            "datastoreName": "sfo-w01-cl01-ds-vsan01"
+                        }
+                    },
+                    "networkSpec": {
+                        "vdsSpecs": [
+                            {
+                                "name": "sfo-w01-cl01-vds01",
+                                "portGroupSpecs": [
+                                    {
+                                        "name": "sfo-w01-cl01-vds01-pg-mgmt",
+                                        "transportType": "MANAGEMENT"
+                                    },
+                                    {
+                                        "name": "sfo-w01-cl01-vds01-pg-vsan",
+                                        "transportType": "VSAN"
+                                    },
+                                    {
+                                        "name": "sfo-w01-cl01-vds01-pg-vmotion",
+                                        "transportType": "VMOTION"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "sfo-w01-cl01-vds02",
+                                "isUsedByNsxt": true // this is important and will be used by NSX-T
+                            }
+                        ],
+                        "nsxClusterSpec": {
+                            "nsxTClusterSpec": {
+                                "geneveVlanId": 1624, // TEP VLAN
+                                "ipAddressPoolSpec": {
+                                    "name": "static-ip-pool-01", // TEP Pool
+                                    "subnets": [
+                                        {
+                                            "ipAddressPoolRanges": [
+                                                {
+                                                    "start": "172.16.24.101",
+                                                    "end": "172.16.24.120"
+                                                },
+                                                {
+                                                    "start": "172.16.24.121",
+                                                    "end": "172.16.24.140"
+                                                }
+                                            ],
+                                            "cidr": "172.16.24.0/24",
+                                            "gateway": "172.16.24.253"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "nsxTSpec": {
+            "nsxManagerSpecs": [
+                {
+                    "name": "nsxmgr1-wld1-vcf0-ko",
+                    "networkDetailsSpec": {
+                        "ipAddress": "172.16.11.76",
+                        "dnsName": "nsxmgr1-wld1-vcf0-ko.rainpole.dev",
+                        "gateway": "172.16.11.253",
+                        "subnetMask": "255.255.255.0"
+                    }
+                },
+                {
+                    "name": "nsxmgr2-wld1-vcf0-ko",
+                    "networkDetailsSpec": {
+                        "ipAddress": "172.16.11.77",
+                        "dnsName": "nsxmgr2-wld1-vcf0-ko.rainpole.dev",
+                        "gateway": "172.16.11.253",
+                        "subnetMask": "255.255.255.0"
+                    }
+                },
+                {
+                    "name": "nsxmgr3-wld1-vcf0-ko",
+                    "networkDetailsSpec": {
+                        "ipAddress": "172.16.11.78",
+                        "dnsName": "nsxmgr3-wld1-vcf0-ko.rainpole.dev",
+                        "gateway": "172.16.11.253",
+                        "subnetMask": "255.255.255.0"
+                    }
+                }
+            ],
+            "vip": "172.16.11.75",
+            "vipFqdn": " nsxmgr-wld1-vcf0-ko.rainpole.dev",
+            "licenseKey": "W023P-ZN280-Z8RD1-0A000-1ND11",
+            "nsxManagerAdminPassword": "PSGlobalCloud123!",
+            "formFactor": "medium"
+        }
+    }
+}

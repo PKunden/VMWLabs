@@ -1,0 +1,66 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug ens192
+iface ens192 inet static
+	address 192.168.0.200/16
+	# dns-* options are implemented by the resolvconf package, if installed
+	gateway 192.168.0.253
+	dns-nameservers 192.168.0.253
+	dns-search rainpole.dev
+# The secondary network interface - SDDC-facing
+auto ens224
+allow-hotplug ens224
+iface ens224 inet manual
+mtu 9000
+
+# The VLAN 1811 interface - Management
+auto ens224.1811
+iface ens224.1811 inet static
+address 172.18.11.253/24
+mtu 9000
+
+# VLAN 1812 vMotion
+auto ens224.1812
+iface ens224.1812 inet static
+address 172.18.12.253/24
+mtu 9000
+
+# VLAN 1813 vSAN
+auto ens224.1813
+iface ens224.1813 inet static
+address 172.18.13.253/24
+mtu 9000
+
+# VLAN 1814 HOST TRANSPORT OVERLAY
+auto ens224.1814
+iface ens224.1814 inet static
+address 172.18.14.253/24
+mtu 9000
+
+# VLAN 1817 EDGE TRANSPORT OVERLAY
+auto ens224.1817
+iface ens224.1817 inet static
+address 172.18.17.253/24
+mtu 9000
+
+
+# VLAN 1818 EDGE UPLINK 
+auto ens224.1818
+iface ens224.1818 inet static
+address 172.18.18.253/24
+mtu 9000
+
+
+# VLAN 1819 EDGE UPLINK 
+auto ens224.1819
+iface ens224.1819 inet static
+address 172.18.19.253/24
+mtu 9000

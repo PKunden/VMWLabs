@@ -1,0 +1,108 @@
+{
+    "clusterStretchSpec": {
+        "hostSpecs": [
+            {
+                "id": "1f1cdf7c-4c34-4aa7-ab68-9026cf1e9142",
+                "licenseKey": "JJ6TL-7MXD5-D8LN1-0NJU4-FJZ62",
+                "hostNetworkSpec": {
+                    "vmNics": [
+                        {
+                            "id": "vmnic0",
+                            "vdsName": "vds01-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic2",
+                            "vdsName": "vds01-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic1",
+                            "vdsName": "vds02-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic3",
+                            "vdsName": "vds02-clu1-mgmt"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "d3cb4117-6dab-4a91-b0bd-3a62e83288b6",
+                "licenseKey": "JJ6TL-7MXD5-D8LN1-0NJU4-FJZ62",
+                "hostNetworkSpec": {
+                    "vmNics": [
+                        {
+                            "id": "vmnic0",
+                            "vdsName": "vds01-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic2",
+                            "vdsName": "vds01-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic1",
+                            "vdsName": "vds02-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic3",
+                            "vdsName": "vds02-clu1-mgmt"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "4162d429-bde7-460c-a9a1-cb6d88749718",
+                "licenseKey": "JJ6TL-7MXD5-D8LN1-0NJU4-FJZ62",
+                "hostNetworkSpec": {
+                    "vmNics": [
+                        {
+                            "id": "vmnic0",
+                            "vdsName": "vds01-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic2",
+                            "vdsName": "vds01-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic1",
+                            "vdsName": "vds02-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic3",
+                            "vdsName": "vds02-clu1-mgmt"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "74fdecae-0d8f-418f-a5c4-5e3e0de2aa0c",
+                "licenseKey": "JJ6TL-7MXD5-D8LN1-0NJU4-FJZ62",
+                "hostNetworkSpec": {
+                    "vmNics": [
+                        {
+                            "id": "vmnic0",
+                            "vdsName": "vds01-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic2",
+                            "vdsName": "vds01-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic1",
+                            "vdsName": "vds02-clu1-mgmt"
+                        },
+                        {
+                            "id": "vmnic3",
+                            "vdsName": "vds02-clu1-mgmt"
+                        }
+                    ]
+                }
+            }
+        ],
+        "witnessSpec": {
+            "vsanIp": "172.16.18.101",
+            "fqdn": "wnode-clu1-mgmt.rainpole.dev",
+            "vsanCidr": "172.16.18.0/24"
+        },
+        "secondaryAzOverlayVlanId": 1624
+    }
+}

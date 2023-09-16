@@ -1,0 +1,46 @@
+[
+    {
+        "fqdn": "node5-clu1-mgmt.rainpole.dev",
+        "username": "root",
+        "password": "VMware1!", // could be changed, recommended
+        "storageType": "VSAN",
+        "vvolStorageProtocolType": null,
+        "networkPoolId": "ffb4c96c-2f6d-4f56-89ac-5b9bd5b93427", // must be changed
+        "networkPoolName": "AZ2-networkpool", // optional field
+        "sshThumbprint": null,
+        "sslThumbprint": null
+    },
+    {
+        "fqdn": "node6-clu1-mgmt.rainpole.dev",
+        "username": "root",
+        "password": "VMware1!",
+        "storageType": "VSAN",
+        "vvolStorageProtocolType": null,
+        "networkPoolId": "ffb4c96c-2f6d-4f56-89ac-5b9bd5b93427",
+        "networkPoolName": "AZ2-networkpool",
+        "sshThumbprint": null,
+        "sslThumbprint": null
+    },
+    {
+        "fqdn": "node7-clu1-mgmt.rainpole.dev",
+        "username": "root",
+        "password": "VMware1!",
+        "storageType": "VSAN",
+        "vvolStorageProtocolType": null,
+        "networkPoolId": "ffb4c96c-2f6d-4f56-89ac-5b9bd5b93427",
+        "networkPoolName": "AZ2-networkpool",
+        "sshThumbprint": null,
+        "sslThumbprint": null
+    },
+    {
+        "fqdn": "node8-clu1-mgmt.rainpole.dev",
+        "username": "root",
+        "password": "VMware1!",
+        "storageType": "VSAN",
+        "vvolStorageProtocolType": null,
+        "networkPoolId": "ffb4c96c-2f6d-4f56-89ac-5b9bd5b93427",
+        "networkPoolName": "AZ2-networkpool",
+        "sshThumbprint": null,
+        "sslThumbprint": null
+    }
+]

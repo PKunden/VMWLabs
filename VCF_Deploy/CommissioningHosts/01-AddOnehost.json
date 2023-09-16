@@ -1,0 +1,35 @@
+[
+    {
+        "fqdn": "esxi1-cl1-wld1-vcf0-ko.corp.local",
+        "username": "root",
+        "password": "VMware1!",
+        "storageType": "VSAN",
+        "vvolStorageProtocolType": null,
+        "networkPoolId": "bf4c9ad1-a94e-4f76-8bcd-e3becf411e74",
+        "networkPoolName": "np1-wld1-vcf0-ko",
+        "sshThumbprint": null,
+        "sslThumbprint": null
+    },
+    {
+        "fqdn": "esxi2-cl1-wld1-vcf0-ko.corp.local",
+        "username": "root",
+        "password": "VMware1!",
+        "storageType": "VSAN",
+        "vvolStorageProtocolType": null,
+        "networkPoolId": "bf4c9ad1-a94e-4f76-8bcd-e3becf411e74",
+        "networkPoolName": "np1-wld1-vcf0-ko",
+        "sshThumbprint": null,
+        "sslThumbprint": null
+    },
+    {
+        "fqdn": "esxi3-cl1-wld1-vcf0-ko.corp.local",
+        "username": "root",
+        "password": "VMware1!",
+        "storageType": "VSAN",
+        "vvolStorageProtocolType": null,
+        "networkPoolId": "bf4c9ad1-a94e-4f76-8bcd-e3becf411e74",
+        "networkPoolName": "np1-wld1-vcf0-ko",
+        "sshThumbprint": null,
+        "sslThumbprint": null
+    }
+]

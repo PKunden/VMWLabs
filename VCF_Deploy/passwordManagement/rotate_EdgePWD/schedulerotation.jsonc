@@ -1,0 +1,46 @@
+// schedule password rotation
+{
+    "operationType": "UPDATE_AUTO_ROTATE_POLICY",
+    "elements": [
+        {
+            "resourceName": "sfo-m01-edge01.corp.local",
+            "resourceType": "NSXT_EDGE",
+            "credentials": [
+                {
+                    "credentialType": "API",
+                    "username": "admin"
+                },
+                {
+                    "credentialType": "SSH",
+                    "username": "root"
+                },
+                {
+                    "credentialType": "AUDIT",
+                    "username": "audit"
+                }
+            ]
+        },
+        {
+            "resourceName": "sfo-m01-edge02.corp.local",
+            "resourceType": "NSXT_EDGE",
+            "credentials": [
+                {
+                    "credentialType": "API",
+                    "username": "admin"
+                },
+                {
+                    "credentialType": "SSH",
+                    "username": "root"
+                },
+                {
+                    "credentialType": "AUDIT",
+                    "username": "audit"
+                }
+            ]
+        }
+    ],
+    "autoRotatePolicy": {
+        "frequencyInDays": 90,
+        "enableAutoRotatePolicy": true
+    }
+}

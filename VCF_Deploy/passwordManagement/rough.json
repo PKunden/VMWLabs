@@ -1,0 +1,19 @@
+{
+    "operationType": "UPDATE_AUTO_ROTATE_POLICY",
+    "elements": [
+        {
+            "resourceName": "sfo01-m01-vc01.rainpole.io",
+            "resourceType": "VCENTER",
+            "credentials": [
+                {
+                    "credentialType": "SSH",
+                    "username": "root"
+                }
+            ]
+        }
+    ],
+    "autoRotatePolicy": {
+        "frequencyInDays": 30,
+        "enableAutoRotatePolicy": true
+    }
+}
