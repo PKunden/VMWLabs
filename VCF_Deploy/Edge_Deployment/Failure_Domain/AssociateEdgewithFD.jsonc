@@ -1,0 +1,8 @@
+// Operation: PUT
+// PUT /api/v1/transport-nodes/<transport-node-id>
+{
+    "resource_type": "TransportNode",
+    "_revision": 10,
+    "id": "8d377c2d-bbd0-4cb0-afbd-2125d53386e0", //// Edge02 node ID
+    "failure_domain_id": "4fc1e3b0-1cd4-4339-86c8-f76baddbaafb" //failure domain ID where  "preferred_active_edge_services": false
+}

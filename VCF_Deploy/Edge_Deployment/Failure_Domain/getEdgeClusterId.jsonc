@@ -1,0 +1,45 @@
+{
+    "results": [
+        {
+            "deployment_type": "VIRTUAL_MACHINE",
+            "members": [
+                {
+                    "member_index": 0,
+                    "transport_node_id": "debccf5b-b835-4b3c-b4b8-cd7690709896",
+                    "display_name": "sfo-m01-edge01"
+                },
+                {
+                    "member_index": 1,
+                    "transport_node_id": "85d7615b-c228-44da-9852-166cc5db5368",
+                    "display_name": "sfo-m01-edge02"
+                }
+            ],
+            "cluster_profile_bindings": [
+                {
+                    "resource_type": "EdgeHighAvailabilityProfile",
+                    "profile_id": "eed13954-a7fc-4e30-b841-b0a5dced9fb4"
+                }
+            ],
+            "member_node_type": "EDGE_NODE",
+            "allocation_rules": [],
+            "enable_inter_site_forwarding": false,
+            "resource_type": "EdgeCluster",
+            "id": "60df4e64-092a-4546-8d1a-f2373483e610", // required
+            "display_name": "sfo-m1-cl01-edge",
+            "tags": [
+                {
+                    "scope": "Created by",
+                    "tag": "VCF"
+                }
+            ],
+            "_create_time": 1692690736193,
+            "_create_user": "admin",
+            "_last_modified_time": 1692690736193,
+            "_last_modified_user": "admin",
+            "_system_owned": false,
+            "_protection": "NOT_PROTECTED",
+            "_revision": 0
+        }
+    ],
+    "result_count": 1
+}

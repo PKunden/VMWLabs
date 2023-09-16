@@ -1,0 +1,29 @@
+// configure the Edge cluster to allocate nodes based on failure domain
+// PUT /api/v1/edge-clusters/<edge-cluster-id>
+{
+    "_revision": 0,
+    "id": "60df4e64-092a-4546-8d1a-f2373483e610",
+    "resource_type": "EdgeCluster",
+    "allocation_rules": [
+        {
+            "action": {
+                "enabled": true,
+                "action_type": "AllocationBasedOnFailureDomain"
+            }
+        }
+    ]
+}
+/* {
+"httpStatus": "BAD_REQUEST",
+"error_code": 15000,
+"module_name": "FABRIC",
+"error_message": "Found errors in the request. Please refer to the related errors for details.",
+"related_errors": [
+    {
+        "httpStatus": "BAD_REQUEST",
+        "error_code": 15021,
+        "module_name": "FABRIC",
+        "error_message": "[Fabric] Edge cluster should have transport nodes from at least two failure domains, if failure domain based allocation enabled."
+    }
+]
+} */

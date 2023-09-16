@@ -1,0 +1,43 @@
+{
+    "results": [
+        {
+            "preferred_active_edge_services": false,
+            "resource_type": "FailureDomain",
+            "id": "89f7bf04-27f9-4663-bd3f-762fb8786342",
+            "display_name": "FD2A-Preferred_Site1",
+            "_create_time": 1693391588885,
+            "_create_user": "admin",
+            "_last_modified_time": 1693391588885,
+            "_last_modified_user": "admin",
+            "_system_owned": false,
+            "_protection": "NOT_PROTECTED",
+            "_revision": 0
+        },
+        {
+            "preferred_active_edge_services": true,
+            "resource_type": "FailureDomain",
+            "id": "0fcaf5b1-e79a-459c-8e66-f123bc839712",
+            "display_name": "FD1A-Preferred_Site1",
+            "_create_time": 1693391546019,
+            "_create_user": "admin",
+            "_last_modified_time": 1693391546019,
+            "_last_modified_user": "admin",
+            "_system_owned": false,
+            "_protection": "NOT_PROTECTED",
+            "_revision": 0
+        },
+        {
+            "resource_type": "FailureDomain",
+            "id": "4fc1e3b0-1cd4-4339-86c8-f76baddbaafb",
+            "display_name": "system-default-failure-domain",
+            "_create_time": 1692639425667,
+            "_create_user": "system",
+            "_last_modified_time": 1692639425667,
+            "_last_modified_user": "system",
+            "_system_owned": true,
+            "_protection": "NOT_PROTECTED",
+            "_revision": 0
+        }
+    ],
+    "result_count": 3
+}

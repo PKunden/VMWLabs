@@ -1,0 +1,686 @@
+// get https://nsxmgr-md-vcf0-ko.rainpole.dev/api/v1/transport-nodes
+{
+    "results": [
+        {
+            "node_id": "b7030f71-16f9-4099-b298-9fd98de0f53a",
+            "host_switch_spec": {
+                "host_switches": [
+                    {
+                        "host_switch_name": "vds01-cl1-md-vcf0-ko",
+                        "host_switch_id": "50 08 62 e7 38 4e 80 8e-c0 8e 71 64 52 6d 0a 56",
+                        "host_switch_type": "VDS",
+                        "host_switch_mode": "STANDARD",
+                        "host_switch_profile_ids": [
+                            {
+                                "key": "UplinkHostSwitchProfile",
+                                "value": "e49e6029-2c9a-4da2-af89-e93413bce21f"
+                            }
+                        ],
+                        "uplinks": [
+                            {
+                                "vds_uplink_name": "uplink2",
+                                "uplink_name": "uplink-2"
+                            },
+                            {
+                                "vds_uplink_name": "uplink1",
+                                "uplink_name": "uplink-1"
+                            }
+                        ],
+                        "is_migrate_pnics": false,
+                        "ip_assignment_spec": {
+                            "ip_pool_id": "ff221b7e-6bad-4e1b-bc29-c5c196336fb5",
+                            "resource_type": "StaticIpPoolSpec"
+                        },
+                        "cpu_config": [],
+                        "transport_zone_endpoints": [
+                            {
+                                "transport_zone_id": "891e6d9a-e516-48ed-a7bf-bfc4a3ec7156",
+                                "transport_zone_profile_ids": [
+                                    {
+                                        "resource_type": "BfdHealthMonitoringProfile",
+                                        "profile_id": "52035bb3-ab02-4a08-9884-18631312e50a"
+                                    }
+                                ]
+                            }
+                        ],
+                        "not_ready": false
+                    }
+                ],
+                "resource_type": "StandardHostSwitchSpec"
+            },
+            "maintenance_mode": "DISABLED",
+            "node_deployment_info": {
+                "os_type": "ESXI",
+                "os_version": "8.0.1",
+                "managed_by_server": "172.16.11.62",
+                "discovered_node_id": "3f9fecae-cccf-44b1-a39b-f5478f2e8f3e:host-18",
+                "compute_collection_id": "3f9fecae-cccf-44b1-a39b-f5478f2e8f3e:domain-c8",
+                "windows_install_location": "",
+                "resource_type": "HostNode",
+                "external_id": "b7030f71-16f9-4099-b298-9fd98de0f53a",
+                "fqdn": "esxi1-cl1-md-vcf0-ko.rainpole.dev",
+                "ip_addresses": [
+                    "172.16.11.101"
+                ],
+                "discovered_ip_addresses": [
+                    "172.16.14.105",
+                    "172.16.14.106",
+                    "172.16.13.101",
+                    "172.16.12.101",
+                    "172.16.11.101",
+                    "169.254.1.1"
+                ],
+                "id": "b7030f71-16f9-4099-b298-9fd98de0f53a"
+            },
+            "is_overridden": false,
+            "resource_type": "TransportNode",
+            "id": "b7030f71-16f9-4099-b298-9fd98de0f53a",
+            "display_name": "esxi1-cl1-md-vcf0-ko.rainpole.dev",
+            "description": "",
+            "tags": [
+                {
+                    "scope": "policyPath",
+                    "tag": "/infra/sites/default/enforcement-points/default/host-transport-nodes/b7030f71-16f9-4099-b298-9fd98de0f53a"
+                }
+            ],
+            "_create_time": 1692644459300,
+            "_create_user": "admin",
+            "_last_modified_time": 1692644459300,
+            "_last_modified_user": "admin",
+            "_system_owned": false,
+            "_protection": "NOT_PROTECTED",
+            "_revision": 0
+        },
+        {
+            "node_id": "5fd38db9-9d4c-4692-aa18-5c50170448c9",
+            "host_switch_spec": {
+                "host_switches": [
+                    {
+                        "host_switch_name": "vds01-cl1-md-vcf0-ko",
+                        "host_switch_id": "50 08 62 e7 38 4e 80 8e-c0 8e 71 64 52 6d 0a 56",
+                        "host_switch_type": "VDS",
+                        "host_switch_mode": "STANDARD",
+                        "host_switch_profile_ids": [
+                            {
+                                "key": "UplinkHostSwitchProfile",
+                                "value": "e49e6029-2c9a-4da2-af89-e93413bce21f"
+                            }
+                        ],
+                        "uplinks": [
+                            {
+                                "vds_uplink_name": "uplink2",
+                                "uplink_name": "uplink-2"
+                            },
+                            {
+                                "vds_uplink_name": "uplink1",
+                                "uplink_name": "uplink-1"
+                            }
+                        ],
+                        "is_migrate_pnics": false,
+                        "ip_assignment_spec": {
+                            "ip_pool_id": "ff221b7e-6bad-4e1b-bc29-c5c196336fb5",
+                            "resource_type": "StaticIpPoolSpec"
+                        },
+                        "cpu_config": [],
+                        "transport_zone_endpoints": [
+                            {
+                                "transport_zone_id": "891e6d9a-e516-48ed-a7bf-bfc4a3ec7156",
+                                "transport_zone_profile_ids": [
+                                    {
+                                        "resource_type": "BfdHealthMonitoringProfile",
+                                        "profile_id": "52035bb3-ab02-4a08-9884-18631312e50a"
+                                    }
+                                ]
+                            }
+                        ],
+                        "not_ready": false
+                    }
+                ],
+                "resource_type": "StandardHostSwitchSpec"
+            },
+            "maintenance_mode": "DISABLED",
+            "node_deployment_info": {
+                "os_type": "ESXI",
+                "os_version": "8.0.1",
+                "managed_by_server": "172.16.11.62",
+                "discovered_node_id": "3f9fecae-cccf-44b1-a39b-f5478f2e8f3e:host-22",
+                "compute_collection_id": "3f9fecae-cccf-44b1-a39b-f5478f2e8f3e:domain-c8",
+                "windows_install_location": "",
+                "resource_type": "HostNode",
+                "external_id": "5fd38db9-9d4c-4692-aa18-5c50170448c9",
+                "fqdn": "esxi2-cl1-md-vcf0-ko.rainpole.dev",
+                "ip_addresses": [
+                    "172.16.11.102"
+                ],
+                "discovered_ip_addresses": [
+                    "172.16.14.107",
+                    "172.16.14.108",
+                    "172.16.13.102",
+                    "172.16.12.102",
+                    "172.16.11.102",
+                    "169.254.1.1"
+                ],
+                "id": "5fd38db9-9d4c-4692-aa18-5c50170448c9"
+            },
+            "is_overridden": false,
+            "resource_type": "TransportNode",
+            "id": "5fd38db9-9d4c-4692-aa18-5c50170448c9",
+            "display_name": "esxi2-cl1-md-vcf0-ko.rainpole.dev",
+            "description": "",
+            "tags": [
+                {
+                    "scope": "policyPath",
+                    "tag": "/infra/sites/default/enforcement-points/default/host-transport-nodes/5fd38db9-9d4c-4692-aa18-5c50170448c9"
+                }
+            ],
+            "_create_time": 1692644459309,
+            "_create_user": "admin",
+            "_last_modified_time": 1692644459309,
+            "_last_modified_user": "admin",
+            "_system_owned": false,
+            "_protection": "NOT_PROTECTED",
+            "_revision": 0
+        },
+        {
+            "node_id": "fdc168d4-1fe9-43bd-92f1-7d79861d1ee6",
+            "host_switch_spec": {
+                "host_switches": [
+                    {
+                        "host_switch_name": "vds01-cl1-md-vcf0-ko",
+                        "host_switch_id": "50 08 62 e7 38 4e 80 8e-c0 8e 71 64 52 6d 0a 56",
+                        "host_switch_type": "VDS",
+                        "host_switch_mode": "STANDARD",
+                        "host_switch_profile_ids": [
+                            {
+                                "key": "UplinkHostSwitchProfile",
+                                "value": "e49e6029-2c9a-4da2-af89-e93413bce21f"
+                            }
+                        ],
+                        "uplinks": [
+                            {
+                                "vds_uplink_name": "uplink2",
+                                "uplink_name": "uplink-2"
+                            },
+                            {
+                                "vds_uplink_name": "uplink1",
+                                "uplink_name": "uplink-1"
+                            }
+                        ],
+                        "is_migrate_pnics": false,
+                        "ip_assignment_spec": {
+                            "ip_pool_id": "ff221b7e-6bad-4e1b-bc29-c5c196336fb5",
+                            "resource_type": "StaticIpPoolSpec"
+                        },
+                        "cpu_config": [],
+                        "transport_zone_endpoints": [
+                            {
+                                "transport_zone_id": "891e6d9a-e516-48ed-a7bf-bfc4a3ec7156",
+                                "transport_zone_profile_ids": [
+                                    {
+                                        "resource_type": "BfdHealthMonitoringProfile",
+                                        "profile_id": "52035bb3-ab02-4a08-9884-18631312e50a"
+                                    }
+                                ]
+                            }
+                        ],
+                        "not_ready": false
+                    }
+                ],
+                "resource_type": "StandardHostSwitchSpec"
+            },
+            "maintenance_mode": "DISABLED",
+            "node_deployment_info": {
+                "os_type": "ESXI",
+                "os_version": "8.0.1",
+                "managed_by_server": "172.16.11.62",
+                "discovered_node_id": "3f9fecae-cccf-44b1-a39b-f5478f2e8f3e:host-23",
+                "compute_collection_id": "3f9fecae-cccf-44b1-a39b-f5478f2e8f3e:domain-c8",
+                "windows_install_location": "",
+                "resource_type": "HostNode",
+                "external_id": "fdc168d4-1fe9-43bd-92f1-7d79861d1ee6",
+                "fqdn": "esxi3-cl1-md-vcf0-ko.rainpole.dev",
+                "ip_addresses": [
+                    "172.16.11.103"
+                ],
+                "discovered_ip_addresses": [
+                    "172.16.14.101",
+                    "172.16.14.102",
+                    "172.16.13.103",
+                    "172.16.12.103",
+                    "172.16.11.103",
+                    "169.254.1.1"
+                ],
+                "id": "fdc168d4-1fe9-43bd-92f1-7d79861d1ee6"
+            },
+            "is_overridden": false,
+            "resource_type": "TransportNode",
+            "id": "fdc168d4-1fe9-43bd-92f1-7d79861d1ee6",
+            "display_name": "esxi3-cl1-md-vcf0-ko.rainpole.dev",
+            "description": "",
+            "tags": [
+                {
+                    "scope": "policyPath",
+                    "tag": "/infra/sites/default/enforcement-points/default/host-transport-nodes/fdc168d4-1fe9-43bd-92f1-7d79861d1ee6"
+                }
+            ],
+            "_create_time": 1692644459314,
+            "_create_user": "admin",
+            "_last_modified_time": 1692644459314,
+            "_last_modified_user": "admin",
+            "_system_owned": false,
+            "_protection": "NOT_PROTECTED",
+            "_revision": 0
+        },
+        {
+            "node_id": "51ff4382-f8c4-4222-9915-97cc2dae76c4",
+            "host_switch_spec": {
+                "host_switches": [
+                    {
+                        "host_switch_name": "vds01-cl1-md-vcf0-ko",
+                        "host_switch_id": "50 08 62 e7 38 4e 80 8e-c0 8e 71 64 52 6d 0a 56",
+                        "host_switch_type": "VDS",
+                        "host_switch_mode": "STANDARD",
+                        "host_switch_profile_ids": [
+                            {
+                                "key": "UplinkHostSwitchProfile",
+                                "value": "e49e6029-2c9a-4da2-af89-e93413bce21f"
+                            }
+                        ],
+                        "uplinks": [
+                            {
+                                "vds_uplink_name": "uplink2",
+                                "uplink_name": "uplink-2"
+                            },
+                            {
+                                "vds_uplink_name": "uplink1",
+                                "uplink_name": "uplink-1"
+                            }
+                        ],
+                        "is_migrate_pnics": false,
+                        "ip_assignment_spec": {
+                            "ip_pool_id": "ff221b7e-6bad-4e1b-bc29-c5c196336fb5",
+                            "resource_type": "StaticIpPoolSpec"
+                        },
+                        "cpu_config": [],
+                        "transport_zone_endpoints": [
+                            {
+                                "transport_zone_id": "891e6d9a-e516-48ed-a7bf-bfc4a3ec7156",
+                                "transport_zone_profile_ids": [
+                                    {
+                                        "resource_type": "BfdHealthMonitoringProfile",
+                                        "profile_id": "52035bb3-ab02-4a08-9884-18631312e50a"
+                                    }
+                                ]
+                            }
+                        ],
+                        "not_ready": false
+                    }
+                ],
+                "resource_type": "StandardHostSwitchSpec"
+            },
+            "maintenance_mode": "DISABLED",
+            "node_deployment_info": {
+                "os_type": "ESXI",
+                "os_version": "8.0.1",
+                "managed_by_server": "172.16.11.62",
+                "discovered_node_id": "3f9fecae-cccf-44b1-a39b-f5478f2e8f3e:host-24",
+                "compute_collection_id": "3f9fecae-cccf-44b1-a39b-f5478f2e8f3e:domain-c8",
+                "windows_install_location": "",
+                "resource_type": "HostNode",
+                "external_id": "51ff4382-f8c4-4222-9915-97cc2dae76c4",
+                "fqdn": "esxi4-cl1-md-vcf0-ko.rainpole.dev",
+                "ip_addresses": [
+                    "172.16.11.104"
+                ],
+                "discovered_ip_addresses": [
+                    "172.16.14.103",
+                    "172.16.14.104",
+                    "172.16.13.104",
+                    "172.16.12.104",
+                    "172.16.11.104",
+                    "169.254.1.1"
+                ],
+                "id": "51ff4382-f8c4-4222-9915-97cc2dae76c4"
+            },
+            "is_overridden": false,
+            "resource_type": "TransportNode",
+            "id": "51ff4382-f8c4-4222-9915-97cc2dae76c4",
+            "display_name": "esxi4-cl1-md-vcf0-ko.rainpole.dev",
+            "description": "",
+            "tags": [
+                {
+                    "scope": "policyPath",
+                    "tag": "/infra/sites/default/enforcement-points/default/host-transport-nodes/51ff4382-f8c4-4222-9915-97cc2dae76c4"
+                }
+            ],
+            "_create_time": 1692644459698,
+            "_create_user": "admin",
+            "_last_modified_time": 1692644459698,
+            "_last_modified_user": "admin",
+            "_system_owned": false,
+            "_protection": "NOT_PROTECTED",
+            "_revision": 0
+        },
+        { // sfo-m01-edge01
+            "node_id": "debccf5b-b835-4b3c-b4b8-cd7690709896",
+            "host_switch_spec": {
+                "host_switches": [
+                    {
+                        "host_switch_name": "nsxDefaultHostSwitch",
+                        "host_switch_id": "fd151c87-b571-40f4-9483-aba9158f5eb9",
+                        "host_switch_type": "NVDS",
+                        "host_switch_mode": "STANDARD",
+                        "host_switch_profile_ids": [
+                            {
+                                "key": "UplinkHostSwitchProfile",
+                                "value": "d6b7594f-ac1f-425c-b911-02e754719b76"
+                            }
+                        ],
+                        "pnics": [
+                            {
+                                "device_name": "fp-eth0",
+                                "uplink_name": "uplink1"
+                            },
+                            {
+                                "device_name": "fp-eth1",
+                                "uplink_name": "uplink2"
+                            }
+                        ],
+                        "is_migrate_pnics": false,
+                        "ip_assignment_spec": {
+                            "ip_list": [
+                                "172.16.17.10",
+                                "172.16.17.11"
+                            ],
+                            "default_gateway": "172.16.17.253",
+                            "subnet_mask": "255.255.255.0",
+                            "resource_type": "StaticIpListSpec"
+                        },
+                        "cpu_config": [],
+                        "transport_zone_endpoints": [
+                            {
+                                "transport_zone_id": "45dd27bf-9a19-4e05-8613-606e35dee391",
+                                "transport_zone_profile_ids": [
+                                    {
+                                        "resource_type": "BfdHealthMonitoringProfile",
+                                        "profile_id": "52035bb3-ab02-4a08-9884-18631312e50a"
+                                    }
+                                ]
+                            },
+                            {
+                                "transport_zone_id": "891e6d9a-e516-48ed-a7bf-bfc4a3ec7156",
+                                "transport_zone_profile_ids": [
+                                    {
+                                        "resource_type": "BfdHealthMonitoringProfile",
+                                        "profile_id": "52035bb3-ab02-4a08-9884-18631312e50a"
+                                    }
+                                ]
+                            }
+                        ],
+                        "pnics_uninstall_migration": [],
+                        "vmk_uninstall_migration": [],
+                        "not_ready": false
+                    }
+                ],
+                "resource_type": "StandardHostSwitchSpec"
+            },
+            "maintenance_mode": "DISABLED",
+            "node_deployment_info": {
+                "deployment_type": "VIRTUAL_MACHINE",
+                "deployment_config": {
+                    "vm_deployment_config": {
+                        "vc_id": "3f9fecae-cccf-44b1-a39b-f5478f2e8f3e",
+                        "compute_id": "resgroup-52",
+                        "storage_id": "datastore-19",
+                        "host_id": "host-18",
+                        "compute_folder_id": "group-v4",
+                        "management_network_id": "dvportgroup-12",
+                        "ipv4_assignment_enabled": false,
+                        "management_port_subnets": [
+                            {
+                                "ip_addresses": [
+                                    "172.16.11.69"
+                                ],
+                                "prefix_length": 24
+                            }
+                        ],
+                        "default_gateway_addresses": [
+                            "172.16.11.253"
+                        ],
+                        "data_network_ids": [
+                            "dvportgroup-53",
+                            "dvportgroup-54"
+                        ],
+                        "reservation_info": {
+                            "memory_reservation": {
+                                "reservation_percentage": 100
+                            },
+                            "cpu_reservation": {
+                                "reservation_in_shares": "HIGH_PRIORITY",
+                                "reservation_in_mhz": 0
+                            }
+                        },
+                        "resource_allocation": {
+                            "cpu_count": 4,
+                            "memory_allocation_in_mb": 8192
+                        },
+                        "placement_type": "VsphereDeploymentConfig"
+                    },
+                    "form_factor": "MEDIUM",
+                    "node_user_settings": {
+                        "cli_username": "admin",
+                        "audit_username": "audit"
+                    }
+                },
+                "node_settings": {
+                    "hostname": "sfo-m01-edge01.rainpole.dev",
+                    "search_domains": [
+                        "rainpole.dev"
+                    ],
+                    "ntp_servers": [
+                        "192.168.0.253"
+                    ],
+                    "dns_servers": [
+                        "192.168.0.253"
+                    ],
+                    "enable_ssh": false,
+                    "allow_ssh_root_login": true,
+                    "enable_upt_mode": false
+                },
+                "resource_type": "EdgeNode",
+                "external_id": "debccf5b-b835-4b3c-b4b8-cd7690709896",
+                "ip_addresses": [
+                    "172.16.11.69"
+                ],
+                "id": "debccf5b-b835-4b3c-b4b8-cd7690709896",
+                "display_name": "sfo-m01-edge01",
+                "tags": [
+                    {
+                        "scope": "Created by",
+                        "tag": "VCF"
+                    }
+                ],
+                "_revision": 12
+            },
+            "is_overridden": false,
+            "resource_type": "TransportNode",
+            "id": "debccf5b-b835-4b3c-b4b8-cd7690709896",
+            "display_name": "sfo-m01-edge01",
+            "tags": [
+                {
+                    "scope": "Created by",
+                    "tag": "VCF"
+                }
+            ],
+            "_create_time": 1692687685948,
+            "_create_user": "admin",
+            "_last_modified_time": 1693125716070,
+            "_last_modified_user": "UC",
+            "_system_owned": false,
+            "_protection": "NOT_PROTECTED",
+            "_revision": 12
+        },
+        { // node sfo-m01-edge02
+            "node_id": "85d7615b-c228-44da-9852-166cc5db5368",
+            "host_switch_spec": {
+                "host_switches": [
+                    {
+                        "host_switch_name": "nsxDefaultHostSwitch",
+                        "host_switch_id": "fd151c87-b571-40f4-9483-aba9158f5eb9",
+                        "host_switch_type": "NVDS",
+                        "host_switch_mode": "STANDARD",
+                        "host_switch_profile_ids": [
+                            {
+                                "key": "UplinkHostSwitchProfile",
+                                "value": "d6b7594f-ac1f-425c-b911-02e754719b76"
+                            }
+                        ],
+                        "pnics": [
+                            {
+                                "device_name": "fp-eth0",
+                                "uplink_name": "uplink1"
+                            },
+                            {
+                                "device_name": "fp-eth1",
+                                "uplink_name": "uplink2"
+                            }
+                        ],
+                        "is_migrate_pnics": false,
+                        "ip_assignment_spec": {
+                            "ip_list": [
+                                "172.16.17.12",
+                                "172.16.17.13"
+                            ],
+                            "default_gateway": "172.16.17.253",
+                            "subnet_mask": "255.255.255.0",
+                            "resource_type": "StaticIpListSpec"
+                        },
+                        "cpu_config": [],
+                        "transport_zone_endpoints": [
+                            {
+                                "transport_zone_id": "45dd27bf-9a19-4e05-8613-606e35dee391",
+                                "transport_zone_profile_ids": [
+                                    {
+                                        "resource_type": "BfdHealthMonitoringProfile",
+                                        "profile_id": "52035bb3-ab02-4a08-9884-18631312e50a"
+                                    }
+                                ]
+                            },
+                            {
+                                "transport_zone_id": "891e6d9a-e516-48ed-a7bf-bfc4a3ec7156",
+                                "transport_zone_profile_ids": [
+                                    {
+                                        "resource_type": "BfdHealthMonitoringProfile",
+                                        "profile_id": "52035bb3-ab02-4a08-9884-18631312e50a"
+                                    }
+                                ]
+                            }
+                        ],
+                        "pnics_uninstall_migration": [],
+                        "vmk_uninstall_migration": [],
+                        "not_ready": false
+                    }
+                ],
+                "resource_type": "StandardHostSwitchSpec"
+            },
+            "maintenance_mode": "DISABLED",
+            "node_deployment_info": {
+                "deployment_type": "VIRTUAL_MACHINE", // node sfo-m01-edge02
+                "deployment_config": {
+                    "vm_deployment_config": {
+                        "vc_id": "3f9fecae-cccf-44b1-a39b-f5478f2e8f3e",
+                        "compute_id": "resgroup-52",
+                        "storage_id": "datastore-19",
+                        "host_id": "host-22",
+                        "compute_folder_id": "group-v4",
+                        "management_network_id": "dvportgroup-12",
+                        "ipv4_assignment_enabled": false,
+                        "management_port_subnets": [
+                            {
+                                "ip_addresses": [
+                                    "172.16.11.70"
+                                ],
+                                "prefix_length": 24
+                            }
+                        ],
+                        "default_gateway_addresses": [
+                            "172.16.11.253"
+                        ],
+                        "data_network_ids": [
+                            "dvportgroup-53",
+                            "dvportgroup-54"
+                        ],
+                        "reservation_info": {
+                            "memory_reservation": {
+                                "reservation_percentage": 100
+                            },
+                            "cpu_reservation": {
+                                "reservation_in_shares": "HIGH_PRIORITY",
+                                "reservation_in_mhz": 0
+                            }
+                        },
+                        "resource_allocation": {
+                            "cpu_count": 4,
+                            "memory_allocation_in_mb": 8192
+                        },
+                        "placement_type": "VsphereDeploymentConfig"
+                    },
+                    "form_factor": "MEDIUM",
+                    "node_user_settings": {
+                        "cli_username": "admin",
+                        "audit_username": "audit"
+                    }
+                },
+                "node_settings": {
+                    "hostname": "sfo-m01-edge02.rainpole.dev",
+                    "search_domains": [
+                        "rainpole.dev"
+                    ],
+                    "ntp_servers": [
+                        "192.168.0.253"
+                    ],
+                    "dns_servers": [
+                        "192.168.0.253"
+                    ],
+                    "enable_ssh": false,
+                    "allow_ssh_root_login": true,
+                    "enable_upt_mode": false
+                },
+                "resource_type": "EdgeNode",
+                "external_id": "85d7615b-c228-44da-9852-166cc5db5368",
+                "ip_addresses": [
+                    "172.16.11.70"
+                ],
+                "id": "85d7615b-c228-44da-9852-166cc5db5368",
+                "display_name": "sfo-m01-edge02",
+                "tags": [
+                    {
+                        "scope": "Created by",
+                        "tag": "VCF"
+                    }
+                ],
+                "_revision": 10
+            },
+            "is_overridden": false,
+            "resource_type": "TransportNode",
+            "id": "85d7615b-c228-44da-9852-166cc5db5368",
+            "display_name": "sfo-m01-edge02",
+            "tags": [
+                {
+                    "scope": "Created by",
+                    "tag": "VCF"
+                }
+            ],
+            "_create_time": 1692688973261,
+            "_create_user": "admin",
+            "_last_modified_time": 1693126616889,
+            "_last_modified_user": "UC",
+            "_system_owned": false,
+            "_protection": "NOT_PROTECTED",
+            "_revision": 10
+        }
+    ],
+    "result_count": 6,
+    "sort_by": "create_time",
+    "sort_ascending": true
+}
