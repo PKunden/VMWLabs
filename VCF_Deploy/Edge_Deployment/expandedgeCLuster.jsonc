@@ -1,0 +1,80 @@
+{
+    "edgeClusterExpansionSpec": {
+        "edgeNodeRootPassword": "VMware123!VMware123!",
+        "edgeNodeAdminPassword": "VMware123!VMware123!",
+        "edgeNodeAuditPassword": "VMware123!VMware123!",
+        "edgeNodeSpecs": [
+            {
+                "edgeNodeName": "sfo-m01-edge03.rainpole.dev",
+                "managementIP": "172.16.11.71/24",
+                "managementGateway": "172.16.11.253",
+                "edgeTepGateway": "172.16.17.253",
+                "edgeTep1IP": "172.16.17.14/24", // TEP IP1 [IP:01]
+                "edgeTep2IP": "172.16.17.15/24", // TEP IP2 [IP:02]
+                "edgeTepVlan": 1617,
+                "clusterId": "3fad7b2a-8a4a-40e4-820d-5ad2d5065ca1",
+                "interRackCluster": false,
+                "uplinkNetwork": [
+                    {
+                        "uplinkVlan": 1615,
+                        "uplinkInterfaceIP": "172.16.15.12/24",
+                        "bgpPeers": [
+                            {
+                                "ip": "172.16.15.253/24",
+                                "asn": 65001,
+                                "password": "VMware1!"
+                            }
+                        ]
+                    },
+                    {
+                        "uplinkVlan": 1616,
+                        "uplinkInterfaceIP": "172.16.16.12/24",
+                        "bgpPeers": [
+                            {
+                                "ip": "172.16.16.253/24",
+                                "asn": 65001,
+                                "password": "VMware1!"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "edgeNodeName": "sfo-m01-edge04.rainpole.dev",
+                "managementIP": "172.16.11.72/24",
+                "managementGateway": "172.16.11.253",
+                "edgeTepGateway": "172.16.17.253",
+                "edgeTep1IP": "172.16.17.16/24", // TEP IP1 [IP:01]
+                "edgeTep2IP": "172.16.17.17/24", // TEP IP2 [IP:02]
+                "edgeTepVlan": 1617,
+                "clusterId": "3fad7b2a-8a4a-40e4-820d-5ad2d5065ca1",
+                "interRackCluster": false,
+                "uplinkNetwork": [
+                    {
+                        "uplinkVlan": 1615,
+                        "uplinkInterfaceIP": "172.16.15.13/24",
+                        "bgpPeers": [
+                            {
+                                "ip": "172.16.15.253/24",
+                                "asn": 65001,
+                                "password": "VMware1!"
+                            }
+                        ]
+                    },
+                    {
+                        "uplinkVlan": 1616,
+                        "uplinkInterfaceIP": "172.16.16.13/24",
+                        "bgpPeers": [
+                            {
+                                "ip": "172.16.16.253/24",
+                                "asn": 65001,
+                                "password": "VMware1!"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "operation": "EXPANSION"
+}
